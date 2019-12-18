@@ -36,7 +36,7 @@ module.exports = {
           link: '/javascript/closure/'
         }, {
           text: 'JS异步',
-          link: '/javascript/closure/'
+          link: '/javascript/async/'
         }, {
           text: 'JS设计模式',
           link: '/javascript/design/'

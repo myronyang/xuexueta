@@ -3,30 +3,23 @@ $textColor = #2c3e50 // 文字颜色
 $borderColor = #eaecef // 边框颜色
 $codeBgColor = #282c34 // 代码背景颜色
 
+body {
+  background: #f5f5f5;
+}
+
 .common-class {
-    .navbar {
-        background $accentColor
-        border-bottom 1px solid $accentColor
-        .links {
-            background $accentColor
-            .router-link-active {
-                border-bottom 2px solid #fff !important
-            }
-        }
-        .suggestion a,
-        .dropdown-item a {
-            color $textColor !important
-        }
-        .sidebar-button {
-            color #fff
-        }
+  .navbar {
+    border-bottom: 1px solid #fff;
+  }
+  .sidebar {
+    color: #fff;
+    background: $accentColor;
+    border: none;
+    a {
+      color: #fff;
+      &.sidebar-link.active {
+        border-left-color: #fff;
+      }
     }
-    .navbar a,
-    .navbar .site-name {
-        color #fff !important
-    }
-    .sidebar {
-        background #eee
-        border none
-    }
+  }
 }
