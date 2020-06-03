@@ -47,7 +47,7 @@ module.exports = {
         link: '/technical/',
         items: [{
             text: '组件库',
-            link: 'https://myronyang.github.io/TJUI/#/'
+            link: 'http://tjui.glinsunai.com/'
           },
           {
             text: '常用函数',
