@@ -1,5 +1,5 @@
 module.exports = {
-  title: '记录集',
+  title: 'YP 记录生活，沉淀技术',
   description: '记录生活，沉淀技术',
   base: '/blog/',
   port: 8099,

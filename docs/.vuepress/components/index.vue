@@ -1,6 +1,6 @@
 <template>
   <div class="index-wrap" :style="{height: height + 'px'}">
-    <div class="container">
+    <!-- <div class="container">
       <div class="main-wrap">
         <div class="module" v-for="item in articles">
           <router-link class="module-inner" to>
@@ -21,23 +21,16 @@
           <div class="user-email">yapengg@foxmail.com</div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       height: null,
       articles: [
-        {
-          title: "JavaScript设计模式",
-          desc:
-            "即按照一种思路或者标准来实现功能，可以由不同设计方案来实现的编程方案。伴随需求的增加，设计的作用才能体现出来。",
-          url: "",
-          date: "12/18/2019, 10:15:28 PM"
-        },
         {
           title: "JavaScript设计模式",
           desc:
@@ -48,13 +41,10 @@ export default {
       ]
     };
   },
-  created() {
-    console.log(this.$route);
-  },
-  mounted() {
+  mounted () {
     const header = 57;
     this.height = window.innerHeight - header;
-    window.addEventListener("resize", function() {
+    window.addEventListener("resize", function () {
       this.height = window.innerHeight - header;
     });
   }
@@ -62,6 +52,11 @@ export default {
 </script>
 
 <style scope lang="stylus">
+$accentColor = #753a88; // 主题色
+$textColor = #2c3e50; // 文字颜色
+$borderColor = #eaecef; // 边框颜色
+$codeBgColor = #282c34; // 代码背景颜色
+
 .index-wrap {
   width: 100%;
   background: url('../assets/image/software.jpg');
