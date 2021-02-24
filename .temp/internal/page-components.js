@@ -4,10 +4,10 @@
 export default {
   "v-2cf116e1": () => import("D:\\Github\\blog\\blog\\Readme.md"),
   "v-27d9570d": () => import("D:\\Github\\blog\\blog\\_posts\\2018-10-27-javascript-async.md"),
-  "v-bddd1db2": () => import("D:\\Github\\blog\\blog\\_posts\\2018-9-25-javascript-closure.md"),
-  "v-103129dd": () => import("D:\\Github\\blog\\blog\\_posts\\2018-9-5-javascript-prototype.md"),
   "v-7113c9e7": () => import("D:\\Github\\blog\\blog\\_posts\\2018-9-6-business-standard.md"),
   "v-0d450c87": () => import("D:\\Github\\blog\\blog\\_posts\\2019-4-5-javascript-design.md"),
-  "v-971aa872": () => import("D:\\Github\\blog\\blog\\_posts\\2019-5-28-webpack-init.md"),
-  "v-9100e232": () => import("D:\\Github\\blog\\blog\\_posts\\2019-5-29-utils-func.md") 
+  "v-103129dd": () => import("D:\\Github\\blog\\blog\\_posts\\2018-9-5-javascript-prototype.md"),
+  "v-9100e232": () => import("D:\\Github\\blog\\blog\\_posts\\2019-5-29-utils-func.md"),
+  "v-bddd1db2": () => import("D:\\Github\\blog\\blog\\_posts\\2018-9-25-javascript-closure.md"),
+  "v-971aa872": () => import("D:\\Github\\blog\\blog\\_posts\\2019-5-28-webpack-init.md") 
 }

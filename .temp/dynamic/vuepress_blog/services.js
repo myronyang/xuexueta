@@ -3,6 +3,6 @@
  */
 export default {
   comment: {"enabled":true,"service":"vssue"},
-  email: {"enabled":true},
+  email: {"enabled":false},
   feed: {"rss":false,"atom":false,"json":false},
 }

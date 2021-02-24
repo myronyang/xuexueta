@@ -35,10 +35,10 @@ module.exports = (options, context, api) => {
         clientId: "9fadcba1f59dfb8f17b7",
         clientSecret: "dbcb5aae3c3b6e9e88332b06ae2230d6629d25fa",
       },
-      newsletter: {
-        endpoint:
-          "https://gmail.us5.list-manage.com/subscribe/post?u=942c0d587f8ea28269e80d6cd&amp;id=d77d789d53",
-      },
+      // newsletter: {
+      //   endpoint:
+      //     "https://gmail.us5.list-manage.com/subscribe/post?u=942c0d587f8ea28269e80d6cd&amp;id=d77d789d53",
+      // },
       nav: [
         {
           text: "About",

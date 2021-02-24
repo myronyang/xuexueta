@@ -6,159 +6,202 @@ tags:
   - 工具
 ---
 
+### localStorage操作
 ``` js
-/*jquery ajax函数*/
-function Ajax(url, type, success, error) {
-  $.ajax({
-    url: url,
-    type: type,
-    dataType: 'json',
-    timeout: 10000,
-    success: function(d) {
-      var data = d.data;
-      success && success(data);
+/**
+ * 存储Storage
+ */
+export const Storage = {
+  set (name, content) {
+    if (!name) return
+    if (typeof content !== 'string') {
+      content = JSON.stringify(content)
     }
-  });
-}
-
-/*jsonp方式*/
-function jsonp() {
-  var options = config || {}; // 需要配置url, success, time, fail四个属性
-  var callbackName = ('jsonp_' + Math.random()).replace(".", "");
-  var oHead = document.getElementsByTagName('head')[0];
-  var oScript = document.createElement('script');
-  oHead.appendChild(oScript);
-  window[callbackName] = function(json) {  //创建jsonp回调函数
-    oHead.removeChild(oScript);
-    clearTimeout(oScript.timer);
-    window[callbackName] = null;
-    options.success && options.success(json);   //先删除script标签，实际上执行的是success函数
-  };
-  oScript.src = options.url + '?' + callbackName;    //发送请求
-  if (options.time) {  //设置超时处理
-    oScript.timer = setTimeout(function () {
-      window[callbackName] = null;
-      oHead.removeChild(oScript);
-      options.fail && options.fail({ message: "超时" });
-    }, options.time);
-  }
-}
-// 使用方法：
-jsonp({
-  url: '/b.com/b.json',
-  success: function(d){
-    //数据处理
+    window.localStorage.setItem(name, content)
   },
-  time: 5000,
-  fail: function(){
-    //错误处理
-  }       
-});
-
-/*常用正则表达式*/
-// 手机号验证
-var validate = function(num) {
-  var reg = /^1[3-9]\d{9}$/;
-  return reg.test(num);
-};
-// 身份证号验证
-var reg = /^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/;
-// ip验证
-var reg = /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])(\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])){3}$/;
-// 判断是否有中文
-var reg = /.*[\u4e00-\u9fa5]+.*$/;
-
-/*阻止冒泡*/
-function stopBubble(e) {
-  e = e || window.event;
-  if(e.stopPropagation) {
-    e.stopPropagation();  //W3C阻止冒泡方法  
-  }else {
-    e.cancelBubble = true; //IE阻止冒泡方法  
-  }
-}
-
-/*全部替换replaceAll*/
-var replaceAll = function(bigStr, str1, str2) {
-  //把bigStr中的所有str1替换为str2
-  var reg = new RegExp(str1, 'gm');
-  return bigStr.replace(reg, str2);
-}
-
-/*获取浏览器url中的参数值*/
-var getURLParam = function(name) {
-  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)', "ig").exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
-}
-
-/*深度拷贝对象*/
-function cloneObj(obj) {
-  var o = obj.constructor == Object ? new obj.constructor() : new odj.constructor(obj.valueOf());
-  for(var key in obj) {
-    if(o[key] != obj[key]) {
-      if(typeof(obj[key]) == 'object' ){
-        o[key] = mods.cloneObj(obj[key]);
-      }else{
-        o[key] = obj[key];
-      }
-    }
-  }
-  return o;
-}
-
-/*数组去重*/
-var unique = function(arr) {
-  var result = [], json = {};
-  for (var i = 0; i < arr.length; i++) {
-    if(!json[arr[i]]) {
-      json[arr[i]] = 1;
-      result.push(arr[i]);  //返回没被删除的元素
-    }
-  }
-  return result;
-}
-
-/*判断数组元素是否重复*/
-var isRepeat = function(arr) {  //arr是否有重复元素
-  var hash = {};
-  for (var i in arr) {
-    if (hash[arr[i]]) return true;
-    hash[arr[i]] = true;
-  }
-  return false;
-}
-
-/*判断是对象还是数组*/
-function isArray = function(o) {
-  return toString.apply(o) === '[object Array]';
-}
-function isObject = function(o) {
-  return toString.apply(o) === '[object Object]';
-}
-
-/*生成随机数*/
-function randombetween(min, max) {
-  return min + (Math.random() * (max - min + 1));
-}
-
-/*操作cookie*/
-var $cookie = {
-  set: function(name, value, days) {
-    var d = new Date();
-    d.setTime(d.getTime() + (days*24*60*60*1000));
-    var expires = 'expires='+d.toUTCString();
-    document.cookie = cname + '=' + cvalue + '; ' + expires;
+  get(name) {
+    if (!name) return
+    return window.localStorage.getItem(name)
   },
-  get: function(name) {
-    var cname = name + '=';
-    var ca = document.cookie.split(';');
-    for(var i=0; i< ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') c = c.substring(1);
-      if (c.indexOf(cname) != -1) return c.substring(cname.length, c.length);
-    }
-    return '';
+  remove(name) {
+    if (!name) return
+    window.localStorage.removeItem(name)
   }
 }
 ```
 
 
+### Cookie操作
+``` js
+/**
+ * 存储Cookie
+ */
+export const Cookie = {
+  set(name, value, exdays){
+    const d = new Date()
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000))
+    const expires = 'expires=' + d.toGMTString()
+    document.cookie = name + '=' + value + '; ' + expires
+  },
+  get(name){
+    name = name + '='
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      const c = ca[i].trim()
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length)
+      }
+    }
+    return ''
+  },
+  remove(name) {
+    const exp = new Date()
+    exp.setTime(exp.getTime() - 1)
+    const cval = getCookie(name)
+    if (cval != null)
+      document.cookie = name + '=' + cval + ';expires=' + exp.toGMTString()
+  }
+}
+```
+
+### 获取url参数
+``` js
+/**
+ * 获取url参数
+ */
+export const getQueryStr = name => {
+  const reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)')
+  const result = window.location.search.substr(1).match(reg)
+  if (result != null) {
+    return unescape(result[2])
+  }
+  return null
+}
+```
+
+### 时间戳转换
+``` js
+/**
+ * 时间戳转换
+ */
+export const formatDate = (date, fmt = 'yyyy-MM-dd hh:mm:ss') => {
+  const time = {
+    'M+': date.getMonth() + 1,
+    'd+': date.getDate(),
+    'h+': date.getHours(),
+    'm+': date.getMinutes(),
+    's+': date.getSeconds(),
+    'S': date.getMilliseconds()
+  }
+  if (/(y+)/.test(fmt)) {
+    fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
+  }
+  for (let k in time) {
+    if (new RegExp('(' + k + ')').test(fmt)) {
+      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (time[k]) : (('00' + time[k]).substr(('' + time[k]).length)))
+    }
+  }
+  return fmt
+}
+```
+
+### 返回顶部
+``` js
+/**
+ * 返回顶部
+ * @param {number} y 距离顶部距离
+ * @param {duration} y 返回动画时间
+ */
+export const toScroll = (y, duration) => {
+  const initialY =
+    document.documentElement.scrollTop || document.body.scrollTop
+  const baseY = (initialY + y) * 0.5
+  const difference = initialY - baseY
+  const startTime = performance.now()
+
+  const step = () => {
+    let normalizedTime = (performance.now() - startTime) / duration
+    if (normalizedTime > 1) normalizedTime = 1
+
+    window.scrollTo(
+      0,
+      baseY + difference * Math.cos(normalizedTime * Math.PI)
+    )
+    if (normalizedTime < 1) window.requestAnimationFrame(step)
+  }
+  window.requestAnimationFrame(step)
+}
+```
+
+### 函数防抖
+``` js
+/**
+ * 函数防抖
+ * @param {function} fn 回调函数
+ * @param {number} delay 间隔时间
+ */
+export const debounce = (fn, delay = 1000) => {
+  let timer = null
+  return function() {
+    let args = arguments
+    if (timer) {
+      clearTimeout(timer)
+      timer = null
+    }
+    timer = setTimeout(() => {
+      fn.apply(this, args) // this 指向vue
+    }, delay)
+  }
+}
+```
+
+### 函数节流
+``` js
+/**
+ * 函数节流
+ * @param {function} fn 回调函数
+ * @param {number} delay 间隔时间
+ */
+export const thorttle = (fn, delay = 1000) => {
+  let lastTime = ''
+  let timer = ''
+  let interval = delay
+  return function () {
+    let args = arguments
+    let nowTime = Date.now()
+    if (lastTime && nowTime - lastTime < interval) {
+      clearTimeout(timer)
+      timer = setTimeout(() => {
+        lastTime = nowTime
+        fn.apply(this, args)
+      }, interval)
+    } else {
+      lastTime = nowTime
+      fn.apply(this, args)
+    }
+  }
+}
+```
+
+### 获取指定范围随机数
+``` js
+/**
+ * 获取指定范围随机数
+ */
+export const getRandom = (start, end) => {
+  const length = end - start
+  const value = parseInt(Math.random() * length + start)
+  return value
+}
+```
+
+### 获取文件后缀
+``` js
+/**
+ * 获取文件后缀
+ */
+export const getFileSuffix = (name) => {
+  const index = name.lastIndexOf('.')
+  return name.substring(index + 1)
+}
+```

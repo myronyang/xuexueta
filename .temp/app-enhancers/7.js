@@ -1,1 +1,1 @@
-export { default } from "D:\\Github\\blog\\node_modules\\_vuepress-plugin-mailchimp@1.4.2@vuepress-plugin-mailchimp\\src\\enhanceAppFile.js"
+export { default } from "D:\\Github\\blog\\node_modules\\_@vuepress_plugin-back-to-top@1.8.2@@vuepress\\plugin-back-to-top\\enhanceAppFile.js"

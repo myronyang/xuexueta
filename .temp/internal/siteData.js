@@ -17,7 +17,8 @@ export const siteData = {
       "relativePath": "Readme.md",
       "key": "v-2cf116e1",
       "path": "/",
-      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ...",
+      "lastUpdated": "2/24/2021, 5:13:42 PM"
     },
     {
       "title": "JS异步",
@@ -48,123 +49,6 @@ export const siteData = {
         }
       ],
       "summary": "JS 为何会有异步\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\n`js\nvar i,\n\tt = Date.now()\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n` ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "JS闭包",
-      "frontmatter": {
-        "title": "JS闭包",
-        "date": "2018-9-25",
-        "tags": [
-          "Javascript"
-        ],
-        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
-      "relativePath": "_posts/2018-9-25-javascript-closure.md",
-      "key": "v-bddd1db2",
-      "path": "/2018/09/25/javascript-closure/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "执行上下文",
-          "slug": "执行上下文"
-        },
-        {
-          "level": 2,
-          "title": "this",
-          "slug": "this"
-        },
-        {
-          "level": 2,
-          "title": "执行上下文栈",
-          "slug": "执行上下文栈"
-        },
-        {
-          "level": 2,
-          "title": "作用域",
-          "slug": "作用域"
-        },
-        {
-          "level": 2,
-          "title": "自由变量到作用域链",
-          "slug": "自由变量到作用域链"
-        },
-        {
-          "level": 2,
-          "title": "闭包",
-          "slug": "闭包"
-        }
-      ],
-      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "JS原型",
-      "frontmatter": {
-        "title": "JS原型",
-        "date": "2019-5-28",
-        "tags": [
-          "Webpack",
-          "工具"
-        ],
-        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
-      "relativePath": "_posts/2018-9-5-javascript-prototype.md",
-      "key": "v-103129dd",
-      "path": "/2019/05/28/javascript-prototype/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "数据类型",
-          "slug": "数据类型"
-        },
-        {
-          "level": 2,
-          "title": "函数和对象",
-          "slug": "函数和对象"
-        },
-        {
-          "level": 2,
-          "title": "prototype原型",
-          "slug": "prototype原型"
-        },
-        {
-          "level": 2,
-          "title": "隐式原型",
-          "slug": "隐式原型"
-        },
-        {
-          "level": 2,
-          "title": "instanceof",
-          "slug": "instanceof"
-        },
-        {
-          "level": 2,
-          "title": "继承",
-          "slug": "继承"
-        },
-        {
-          "level": 2,
-          "title": "灵活性",
-          "slug": "灵活性"
-        },
-        {
-          "level": 2,
-          "title": "es6中class",
-          "slug": "es6中class"
-        }
-      ],
-      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -332,6 +216,192 @@ export const siteData = {
       "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
+      "title": "JS原型",
+      "frontmatter": {
+        "title": "JS原型",
+        "date": "2019-5-28",
+        "tags": [
+          "Webpack",
+          "工具"
+        ],
+        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
+      "relativePath": "_posts/2018-9-5-javascript-prototype.md",
+      "key": "v-103129dd",
+      "path": "/2019/05/28/javascript-prototype/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数据类型",
+          "slug": "数据类型"
+        },
+        {
+          "level": 2,
+          "title": "函数和对象",
+          "slug": "函数和对象"
+        },
+        {
+          "level": 2,
+          "title": "prototype原型",
+          "slug": "prototype原型"
+        },
+        {
+          "level": 2,
+          "title": "隐式原型",
+          "slug": "隐式原型"
+        },
+        {
+          "level": 2,
+          "title": "instanceof",
+          "slug": "instanceof"
+        },
+        {
+          "level": 2,
+          "title": "继承",
+          "slug": "继承"
+        },
+        {
+          "level": 2,
+          "title": "灵活性",
+          "slug": "灵活性"
+        },
+        {
+          "level": 2,
+          "title": "es6中class",
+          "slug": "es6中class"
+        }
+      ],
+      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "常用函数",
+      "frontmatter": {
+        "title": "常用函数",
+        "date": "2019-5-29",
+        "tags": [
+          "Javascript",
+          "工具"
+        ],
+        "description": "\n` js\n/**\n 存储Storage\n */\nexport const Storage = {\n  set (name, content) {\n    if (!name) return\n    if (typeof content !== 'string') {\n      content = JSON.stringify(content)\n    } ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2019-5-29-utils-func.html",
+      "relativePath": "_posts/2019-5-29-utils-func.md",
+      "key": "v-9100e232",
+      "path": "/2019/05/29/utils-func/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "localStorage操作",
+          "slug": "localstorage操作"
+        },
+        {
+          "level": 3,
+          "title": "Cookie操作",
+          "slug": "cookie操作"
+        },
+        {
+          "level": 3,
+          "title": "获取url参数",
+          "slug": "获取url参数"
+        },
+        {
+          "level": 3,
+          "title": "时间戳转换",
+          "slug": "时间戳转换"
+        },
+        {
+          "level": 3,
+          "title": "返回顶部",
+          "slug": "返回顶部"
+        },
+        {
+          "level": 3,
+          "title": "函数防抖",
+          "slug": "函数防抖"
+        },
+        {
+          "level": 3,
+          "title": "函数节流",
+          "slug": "函数节流"
+        },
+        {
+          "level": 3,
+          "title": "获取指定范围随机数",
+          "slug": "获取指定范围随机数"
+        },
+        {
+          "level": 3,
+          "title": "获取文件后缀",
+          "slug": "获取文件后缀"
+        }
+      ],
+      "summary": "\n` js\n/**\n 存储Storage\n */\nexport const Storage = {\n  set (name, content) {\n    if (!name) return\n    if (typeof content !== 'string') {\n      content = JSON.stringify(content)\n    } ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/24/2021, 5:13:42 PM"
+    },
+    {
+      "title": "JS闭包",
+      "frontmatter": {
+        "title": "JS闭包",
+        "date": "2018-9-25",
+        "tags": [
+          "Javascript"
+        ],
+        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
+      "relativePath": "_posts/2018-9-25-javascript-closure.md",
+      "key": "v-bddd1db2",
+      "path": "/2018/09/25/javascript-closure/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "执行上下文",
+          "slug": "执行上下文"
+        },
+        {
+          "level": 2,
+          "title": "this",
+          "slug": "this"
+        },
+        {
+          "level": 2,
+          "title": "执行上下文栈",
+          "slug": "执行上下文栈"
+        },
+        {
+          "level": 2,
+          "title": "作用域",
+          "slug": "作用域"
+        },
+        {
+          "level": 2,
+          "title": "自由变量到作用域链",
+          "slug": "自由变量到作用域链"
+        },
+        {
+          "level": 2,
+          "title": "闭包",
+          "slug": "闭包"
+        }
+      ],
+      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
       "title": "Webpack 初始化",
       "frontmatter": {
         "title": "Webpack 初始化",
@@ -356,28 +426,6 @@ export const siteData = {
         }
       ],
       "summary": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "常用函数",
-      "frontmatter": {
-        "title": "常用函数",
-        "date": "2019-5-29",
-        "tags": [
-          "Javascript",
-          "工具"
-        ],
-        "description": "` js\n/jquery ajax函数/\nfunction Ajax(url, type, success, error) {\n  $.ajax({\n    url: url,\n    type: type,\n    dataType: 'json',\n    timeout: 10000,\n    success: function(d) {\n      var dat ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2019-5-29-utils-func.html",
-      "relativePath": "_posts/2019-5-29-utils-func.md",
-      "key": "v-9100e232",
-      "path": "/2019/05/29/utils-func/",
-      "summary": "` js\n/jquery ajax函数/\nfunction Ajax(url, type, success, error) {\n  $.ajax({\n    url: url,\n    type: type,\n    dataType: 'json',\n    timeout: 10000,\n    success: function(d) {\n      var dat ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -412,24 +460,6 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "FrontmatterPagination",
-        "title": "Webpack Tag"
-      },
-      "regularPath": "/tag/Webpack/",
-      "key": "v-ad8a01a8",
-      "path": "/tag/Webpack/"
-    },
-    {
-      "frontmatter": {
-        "layout": "FrontmatterPagination",
-        "title": "工具 Tag"
-      },
-      "regularPath": "/tag/%E5%B7%A5%E5%85%B7/",
-      "key": "v-97019ce8",
-      "path": "/tag/工具/"
-    },
-    {
-      "frontmatter": {
-        "layout": "FrontmatterPagination",
         "title": "业务 Tag"
       },
       "regularPath": "/tag/%E4%B8%9A%E5%8A%A1/",
@@ -444,6 +474,24 @@ export const siteData = {
       "regularPath": "/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
       "key": "v-ae3001b6",
       "path": "/tag/设计模式/"
+    },
+    {
+      "frontmatter": {
+        "layout": "FrontmatterPagination",
+        "title": "Webpack Tag"
+      },
+      "regularPath": "/tag/Webpack/",
+      "key": "v-ad8a01a8",
+      "path": "/tag/Webpack/"
+    },
+    {
+      "frontmatter": {
+        "layout": "FrontmatterPagination",
+        "title": "工具 Tag"
+      },
+      "regularPath": "/tag/%E5%B7%A5%E5%85%B7/",
+      "key": "v-97019ce8",
+      "path": "/tag/工具/"
     },
     {
       "frontmatter": {
@@ -475,9 +523,6 @@ export const siteData = {
       "repo": "blog",
       "clientId": "9fadcba1f59dfb8f17b7",
       "clientSecret": "dbcb5aae3c3b6e9e88332b06ae2230d6629d25fa"
-    },
-    "newsletter": {
-      "endpoint": "https://gmail.us5.list-manage.com/subscribe/post?u=942c0d587f8ea28269e80d6cd&amp;id=d77d789d53"
     },
     "nav": [
       {
