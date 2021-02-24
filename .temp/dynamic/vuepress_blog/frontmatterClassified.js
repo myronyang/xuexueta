@@ -10,6 +10,7 @@ export default {
       "pageKeys": [
         "v-00d7eeae",
         "v-48f50183",
+        "v-41c1ad79",
         "v-701115ba",
         "v-74e62bc3"
       ]
@@ -19,8 +20,7 @@ export default {
       "scope": "tag",
       "path": "/tag/Webpack/",
       "pageKeys": [
-        "v-5b151f3a",
-        "v-41c1ad79"
+        "v-5b151f3a"
       ]
     },
     "工具": {
@@ -29,8 +29,7 @@ export default {
       "path": "/tag/工具/",
       "pageKeys": [
         "v-5b151f3a",
-        "v-48f50183",
-        "v-41c1ad79"
+        "v-48f50183"
       ]
     },
     "设计模式": {

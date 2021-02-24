@@ -1,9 +1,8 @@
 ---
 title: JS原型
-date: 2019-5-28
+date: 2018-9-5
 tags: 
-  - Webpack
-  - 工具
+  - Javascript
 ---
 
 ## 数据类型

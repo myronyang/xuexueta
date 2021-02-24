@@ -46,6 +46,11 @@ export const siteData = {
           "level": 2,
           "title": "jQuery异步",
           "slug": "jquery异步"
+        },
+        {
+          "level": 2,
+          "title": "ES6的Promise",
+          "slug": "es6的promise"
         }
       ],
       "summary": "\nJS 为何会有异步\n\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\nvar i,\n\tt = Date.now()\n\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n上面的程序花费 250ms ...",
@@ -108,10 +113,9 @@ export const siteData = {
       "title": "JS原型",
       "frontmatter": {
         "title": "JS原型",
-        "date": "2019-5-28",
+        "date": "2018-9-5",
         "tags": [
-          "Webpack",
-          "工具"
+          "Javascript"
         ],
         "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefined  // ...",
         "layout": "Post",
@@ -120,7 +124,7 @@ export const siteData = {
       "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
       "relativePath": "_posts/2018-9-5-javascript-prototype.md",
       "key": "v-41c1ad79",
-      "path": "/2019/05/28/javascript-prototype/",
+      "path": "/2018/09/05/javascript-prototype/",
       "headers": [
         {
           "level": 2,

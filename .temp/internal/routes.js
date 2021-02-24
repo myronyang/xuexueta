@@ -70,19 +70,19 @@ export const routes = [
   },
   {
     name: "v-41c1ad79",
-    path: "/2019/05/28/javascript-prototype/",
+    path: "/2018/09/05/javascript-prototype/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Post", "v-41c1ad79").then(next)
     },
   },
   {
-    path: "/2019/05/28/javascript-prototype/index.html",
-    redirect: "/2019/05/28/javascript-prototype/"
+    path: "/2018/09/05/javascript-prototype/index.html",
+    redirect: "/2018/09/05/javascript-prototype/"
   },
   {
     path: "/_posts/2018-9-5-javascript-prototype.html",
-    redirect: "/2019/05/28/javascript-prototype/"
+    redirect: "/2018/09/05/javascript-prototype/"
   },
   {
     name: "v-701115ba",
