@@ -1,164 +1,87 @@
-module.exports = {
-  title: 'PENG BlOG ',
-  description: 'A blog powered by VuePress',
-  theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
-  plugins: ['@vuepress/back-to-top'],
-  themeConfig: {
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#dateformat
-     */
-
-    // dateFormat: 'YYYY-MM-DD',
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
-     */
-
-    nav: [
-      {
-        text: '文章',
-        link: '/',
-      },
-      {
-        text: '标签',
-        link: '/tag/',
-      },
-      {
-        text: '组件库',
-        link: 'http://tjui.glinsunai.com/#/',
-      },
-      {
-        text: 'Github',
-        link: 'https://github.com/myronyang',
-      },
-    ],
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer
-     */
-    footer: {
-      contact: [
+const path = require("path");
+module.exports = (options, context, api) => {
+  return {
+    title: "PENG BlOG",
+    description: "Web development, Frontend, JavaScript",
+    theme: "@vuepress/blog",
+    plugins: [
+      [
+        "@vuepress/back-to-top",
+        "@vuepress/google-analytics",
         {
-          type: "github",
-          link: "https://github.com/myronyang"
+          ga: process.env.GA,
+        },
+      ],
+    ],
+    themeConfig: {
+      directories: [
+        {
+          id: "blog",
+          dirname: "_posts",
+          title: "貼文",
+          path: "/blog/",
+          // itemPermalink: "/blog /:year/:month/:day/:slug"
+        },
+      ],
+      sitemap: {
+        hostname: "http://blog.glinsunai.com",
+      },
+      comment: {
+        service: "vssue",
+        autoCreateIssue: false,
+        prefix: "[Post]",
+        owner: "myronyang",
+        repo: "blog",
+        clientId: "9fadcba1f59dfb8f17b7",
+        clientSecret: "dbcb5aae3c3b6e9e88332b06ae2230d6629d25fa",
+      },
+      newsletter: {
+        endpoint:
+          "https://gmail.us5.list-manage.com/subscribe/post?u=942c0d587f8ea28269e80d6cd&amp;id=d77d789d53",
+      },
+      nav: [
+        {
+          text: "About",
+          link: "/",
         },
         {
-          type: "mail",
-          link: "821253835@qq.com"
-        }
-      ],
-      copyright: [
+          text: "博客",
+          link: "/blog/",
+        },
         {
-          text: "MyronYang © 2020",
-          link: ""
-        }
-      ]
+          text: "标签",
+          link: "/tag/",
+        },
+        {
+          text: "Github",
+          link: "https://github.com/myronyang",
+        },
+      ],
+      footer: {
+        contact: [
+          {
+            type: "github",
+            link: "https://github.com/myronyang",
+          },
+          {
+            type: "mail",
+            link: "821253835@qq.com",
+          },
+          {
+            type: "web",
+            link: "http://tjui.glinsunai.com/#/",
+          },
+        ],
+        copyright: [
+          {
+            text: "MyronYang © 2020",
+            link: "",
+          },
+        ],
+      },
     },
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
-     */
-
-    // directories:[
-    //   {
-    //     id: 'post',
-    //     dirname: '_posts',
-    //     path: '/',
-    //     itemPermalink: '/:year/:month/:day/:slug',
-    //   },
-    //   {
-    //     id: 'writing',
-    //     dirname: '_writings',
-    //     path: '/',
-    //     itemPermalink: '/:year/:month/:day/:slug',
-    //   },
-    // ],
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#frontmatters
-     */
-
-    // frontmatters: [
-    //   {
-    //     id: "tag",
-    //     keys: ['tags'],
-    //     path: '/tag/',
-    //   },
-    //   {
-    //     id: "location",
-    //     keys: ['location'],
-    //     path: '/location/',
-    //   },
-    // ],
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#globalpagination
-     */
-
-    // globalPagination: {
-    //   lengthPerPage: 10,
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#sitemap
-     */
-
-    // sitemap: {
-    //   hostname: 'https://example.vuepress-theme-blog.ulivz.com/'
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#comment
-     */
-
-    // comment: {
-    //   service: 'disqus',
-    //   shortname: 'vuepress-plugin-blog',
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#newsletter
-     */
-
-    // newsletter: {
-    //   endpoint: 'https://billyyyyy3320.us4.list-manage.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138'
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
-     */
-
-    // feed: {
-    //   canonical_base: 'https://example.vuepress-theme-blog.ulivz.com/',
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
-     */
-
-    // summary:false,
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summarylength
-     */
-
-    // summaryLength:100,
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#pwa
-     */
-
-    // pwa:true,
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#paginationcomponent
-     */
-
-    // paginationComponent: 'SimplePagination'
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
-     */
-
-    // smoothScroll: true
-  },
-}
+    alias: {
+      "@assets": path.resolve(__dirname, "../assets"),
+    },
+  };
+};

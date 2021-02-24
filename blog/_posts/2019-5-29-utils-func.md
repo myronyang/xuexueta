@@ -1,10 +1,11 @@
 ---
-sidebar: auto
-pageClass: common-class
+title: 常用函数
+date: 2019-5-29
+tags: 
+  - Javascript
+  - 工具
 ---
 
-
-# 常用函数
 ``` js
 /*jquery ajax函数*/
 function Ajax(url, type, success, error) {

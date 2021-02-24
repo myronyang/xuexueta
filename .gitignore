@@ -5,9 +5,9 @@ npm-debug.log
 coverage/
 run
 dist
-public
 .DS_Store
 .nyc_output
 .basement
 config.local.js
 basement_dist
+/.vscode

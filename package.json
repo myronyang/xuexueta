@@ -1,20 +1,25 @@
 {
-  "name": "vuepress-blog-template",
-  "version": "0.0.1",
-  "description": "A blog powered by VuePress",
+  "name": "peng-blog",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
   "authors": {
     "name": "myronyang",
     "email": "821253835@qq.com"
   },
   "scripts": {
-    "dev": "vuepress dev blog --temp .temp",
+    "dev": "vuepress dev blog --open --no-clear-screen --temp .temp",
     "build": "vuepress build blog",
     "deploy": "bash deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.7.1",
     "@vuepress/theme-blog": "^2.3.2",
-    "vuepress": "^1.6.0"
+    "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "vue-switches": "^2.0.1"
   }
 }
