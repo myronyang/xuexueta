@@ -1,5 +1,3 @@
 # BlOG
 
-Source code for my personal site
-
-## Powered by [vuepress-theme-blog](https://github.com/vuepressjs/vuepress-theme-blog)
+As you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!
