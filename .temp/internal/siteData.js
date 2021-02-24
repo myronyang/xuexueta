@@ -56,7 +56,7 @@ export const siteData = {
       "summary": "\nJS 为何会有异步\n\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\nvar i,\n\tt = Date.now()\n\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n上面的程序花费 250ms ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/24/2021, 10:54:06 PM"
     },
     {
       "title": "Webpack 初始化",
@@ -85,7 +85,7 @@ export const siteData = {
       "summary": "\n详细配置参考 webpack中文文档\n\n创建项目目录  cd project\n\n在命令行工具中运行 yarn init\n\n安装webpack包 yarn install webpack webpack-cli --dev\n\n安装webpack插件 `yarn install webpack-dev ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/24/2021, 10:54:06 PM"
     },
     {
       "title": "常用函数",
@@ -170,7 +170,7 @@ export const siteData = {
       "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefined  // ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/24/2021, 10:54:06 PM"
     },
     {
       "title": "JS设计模式",
@@ -237,59 +237,6 @@ export const siteData = {
         }
       ],
       "summary": "\n何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\n\nUNIX/LINUX设计思想\n\n参考文献 《UNIX/LINUX设计思想》\n\n准则1: 小即是美\n准则2: 让每个程 ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "JS闭包",
-      "frontmatter": {
-        "title": "JS闭包",
-        "date": "2018-9-25",
-        "tags": [
-          "Javascript"
-        ],
-        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\nconsole.log(a) // Uncaught ReferenceError: a is not defined\n\nconsole.log(a) // undefined\nvar a\n\ncon ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
-      "relativePath": "_posts/2018-9-25-javascript-closure.md",
-      "key": "v-74e62bc3",
-      "path": "/2018/09/25/javascript-closure/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "执行上下文",
-          "slug": "执行上下文"
-        },
-        {
-          "level": 2,
-          "title": "this",
-          "slug": "this"
-        },
-        {
-          "level": 2,
-          "title": "执行上下文栈",
-          "slug": "执行上下文栈"
-        },
-        {
-          "level": 2,
-          "title": "作用域",
-          "slug": "作用域"
-        },
-        {
-          "level": 2,
-          "title": "自由变量到作用域链",
-          "slug": "自由变量到作用域链"
-        },
-        {
-          "level": 2,
-          "title": "闭包",
-          "slug": "闭包"
-        }
-      ],
-      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\nconsole.log(a) // Uncaught ReferenceError: a is not defined\n\nconsole.log(a) // undefined\nvar a\n\ncon ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -383,6 +330,59 @@ export const siteData = {
         }
       ],
       "summary": "\nBEM思想\n\nBEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。\n\n命名约定的模式如下：\n.block{}\n.bloc ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "JS闭包",
+      "frontmatter": {
+        "title": "JS闭包",
+        "date": "2018-9-25",
+        "tags": [
+          "Javascript"
+        ],
+        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\nconsole.log(a) // Uncaught ReferenceError: a is not defined\n\nconsole.log(a) // undefined\nvar a\n\ncon ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
+      "relativePath": "_posts/2018-9-25-javascript-closure.md",
+      "key": "v-74e62bc3",
+      "path": "/2018/09/25/javascript-closure/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "执行上下文",
+          "slug": "执行上下文"
+        },
+        {
+          "level": 2,
+          "title": "this",
+          "slug": "this"
+        },
+        {
+          "level": 2,
+          "title": "执行上下文栈",
+          "slug": "执行上下文栈"
+        },
+        {
+          "level": 2,
+          "title": "作用域",
+          "slug": "作用域"
+        },
+        {
+          "level": 2,
+          "title": "自由变量到作用域链",
+          "slug": "自由变量到作用域链"
+        },
+        {
+          "level": 2,
+          "title": "闭包",
+          "slug": "闭包"
+        }
+      ],
+      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\nconsole.log(a) // Uncaught ReferenceError: a is not defined\n\nconsole.log(a) // undefined\nvar a\n\ncon ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -519,7 +519,7 @@ export const siteData = {
       ],
       "copyright": [
         {
-          "text": "MyronYang © 2020",
+          "text": "Myron Yang © 2020-2021",
           "link": ""
         }
       ]

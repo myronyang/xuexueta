@@ -30,7 +30,7 @@ tags:
 
 兼容es6需安装babel插件 `yarn add babel-loader @babel/core @babel/preset-env --dev`,在webpack.dev.config.js中的module添加对应的rules
 
-> #### 各版本有相对应的插件文档，注意版本号
+> <big>各版本有相对应的插件文档，注意版本号</big>
 > - "@babel/core": "^7.4.3",
 > - "@babel/preset-env": "^7.4.3",
 > - "babel-loader": "^8.0.5",

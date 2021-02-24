@@ -101,22 +101,6 @@ export const routes = [
     redirect: "/2019/04/05/javascript-design/"
   },
   {
-    name: "v-74e62bc3",
-    path: "/2018/09/25/javascript-closure/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-74e62bc3").then(next)
-    },
-  },
-  {
-    path: "/2018/09/25/javascript-closure/index.html",
-    redirect: "/2018/09/25/javascript-closure/"
-  },
-  {
-    path: "/_posts/2018-9-25-javascript-closure.html",
-    redirect: "/2018/09/25/javascript-closure/"
-  },
-  {
     name: "v-2bc63283",
     path: "/2018/09/06/business-standard/",
     component: GlobalLayout,
@@ -131,6 +115,22 @@ export const routes = [
   {
     path: "/_posts/2018-9-6-business-standard.html",
     redirect: "/2018/09/06/business-standard/"
+  },
+  {
+    name: "v-74e62bc3",
+    path: "/2018/09/25/javascript-closure/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-74e62bc3").then(next)
+    },
+  },
+  {
+    path: "/2018/09/25/javascript-closure/index.html",
+    redirect: "/2018/09/25/javascript-closure/"
+  },
+  {
+    path: "/_posts/2018-9-25-javascript-closure.html",
+    redirect: "/2018/09/25/javascript-closure/"
   },
   {
     name: "v-424df898",

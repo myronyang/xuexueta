@@ -8,6 +8,6 @@ export default {
   "v-48f50183": () => import("/Users/yangpeng/Blog/blog/_posts/2019-5-29-utils-func.md"),
   "v-41c1ad79": () => import("/Users/yangpeng/Blog/blog/_posts/2018-9-5-javascript-prototype.md"),
   "v-701115ba": () => import("/Users/yangpeng/Blog/blog/_posts/2019-4-5-javascript-design.md"),
-  "v-74e62bc3": () => import("/Users/yangpeng/Blog/blog/_posts/2018-9-25-javascript-closure.md"),
-  "v-2bc63283": () => import("/Users/yangpeng/Blog/blog/_posts/2018-9-6-business-standard.md") 
+  "v-2bc63283": () => import("/Users/yangpeng/Blog/blog/_posts/2018-9-6-business-standard.md"),
+  "v-74e62bc3": () => import("/Users/yangpeng/Blog/blog/_posts/2018-9-25-javascript-closure.md") 
 }

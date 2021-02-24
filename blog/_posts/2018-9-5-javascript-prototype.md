@@ -28,9 +28,8 @@ const fn = function() {}
 fn instanceof Object // true
 ```
 
-::: warning 重点提示
-一切（引用类型）都是对象，对象是属性的集合
-:::
+> <big>一切（引用类型）都是对象，对象是属性的集合</big>
+
 ```js
 const obj = {
 	a: 1,
@@ -152,9 +151,7 @@ Fn是个函数，fn是Fn函数new出来，是Fn的引用。这样fn就可以调�
 
 我们自己定义函数的prototype的本质和`var obj = {}`是一样的，都是被Object创建，所以他的`__proto__`指向`Object.prototype`。
 
-::: warning 重点提示
-但是`Object.prototype`是一个特例，它的·`__proto__`指向`null`
-:::
+> <big>但是`Object.prototype`是一个特例，它的·`__proto__`指向`null`</big>
 
 函数也是对象，函数也有`__proto__`吗？
 
@@ -169,9 +166,8 @@ var fn2 = new Function('x', 'y', 'return x + y')
 console.log(fn1(1, 2))
 ```
 第一种是我们常用方式，第二种是通过`new Function`来创建。
-::: danger
-首先根本不推荐使用Function来创建函数(此处只是演示)
-:::
+
+> <big>首先根本不推荐使用Function来创建函数(此处只是演示)</big>
 
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/img6.png)
 
@@ -201,11 +197,10 @@ fn instanceof Function  // true
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/img7.png)
 
 #### 重点看上图，看似繁杂，但是我们必须一步步分析，首先温故两个概念
-::: warning 重点提示
-- 每个对象都有一个__proto__属性，指向创建该对象的函数的prototype
-- 每个函数都有一个属性叫做prototype
-且默认的只有一个叫做constructor的属性，指向这个函数本身
-:::
+
+> - <big>每个对象都有一个__proto__属性，指向创建该对象的函数的prototype</big>
+> - <big>每个函数都有一个属性叫做prototype</big>
+> - <big>且默认的只有一个叫做constructor的属性，指向这个函数本身</big>
 
 - f1由Foo创建，所以f1的__proto__指向Foo.prototype，而Foo是由function Foo创建，Foo也是一个函数，函数的prototype和onstructor指向函数本身，
 所以function Foo和Foo.prototype相互关联。
@@ -254,9 +249,7 @@ console.log(f1.b) // 200
 ```
 以上代码中，f1是由Foo函数new出来的对象，f1.a是f1对象的基本属性，f1.b是从Foo.prototype得来，因为`f1.__proto__`指向的是`Foo.prototype`。
 
-::: warning 重点提示
-访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链。
-:::
+> <big>访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链。</big>
 
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/182013450814552.png)
 
