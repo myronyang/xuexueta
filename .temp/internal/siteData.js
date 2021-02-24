@@ -11,13 +11,14 @@ export const siteData = {
       "title": "About",
       "frontmatter": {
         "title": "About",
-        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+        "description": " Hi, I'm Peng Yang\n\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n ..."
       },
       "regularPath": "/",
       "relativePath": "Readme.md",
-      "key": "v-2cf116e1",
+      "key": "v-fe328110",
       "path": "/",
-      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+      "summary": " Hi, I'm Peng Yang\n\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n ...",
+      "lastUpdated": "2/24/2021, 5:13:42 PM"
     },
     {
       "title": "JS异步",
@@ -27,13 +28,13 @@ export const siteData = {
         "tags": [
           "Javascript"
         ],
-        "description": "JS 为何会有异步\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\n`js\nvar i,\n\tt = Date.now()\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n` ...",
+        "description": "\nJS 为何会有异步\n\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\nvar i,\n\tt = Date.now()\n\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n上面的程序花费 250ms ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
       "regularPath": "/_posts/2018-10-27-javascript-async.html",
       "relativePath": "_posts/2018-10-27-javascript-async.md",
-      "key": "v-27d9570d",
+      "key": "v-00d7eeae",
       "path": "/2018/10/27/javascript-async/",
       "headers": [
         {
@@ -47,63 +48,61 @@ export const siteData = {
           "slug": "jquery异步"
         }
       ],
-      "summary": "JS 为何会有异步\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\n`js\nvar i,\n\tt = Date.now()\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n` ...",
+      "summary": "\nJS 为何会有异步\n\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\nvar i,\n\tt = Date.now()\n\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n上面的程序花费 250ms ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
-      "title": "JS闭包",
+      "title": "Webpack 初始化",
       "frontmatter": {
-        "title": "JS闭包",
-        "date": "2018-9-25",
+        "title": "Webpack 初始化",
+        "date": "2019-5-28",
         "tags": [
-          "Javascript"
+          "Webpack",
+          "工具"
         ],
-        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+        "description": "\n详细配置参考 webpack中文文档\n\n创建项目目录  cd project\n\n在命令行工具中运行 yarn init\n\n安装webpack包 yarn install webpack webpack-cli --dev\n\n安装webpack插件 `yarn install webpack-dev ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
-      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
-      "relativePath": "_posts/2018-9-25-javascript-closure.md",
-      "key": "v-bddd1db2",
-      "path": "/2018/09/25/javascript-closure/",
+      "regularPath": "/_posts/2019-5-28-webpack-init.html",
+      "relativePath": "_posts/2019-5-28-webpack-init.md",
+      "key": "v-5b151f3a",
+      "path": "/2019/05/28/webpack-init/",
       "headers": [
         {
           "level": 2,
-          "title": "执行上下文",
-          "slug": "执行上下文"
-        },
-        {
-          "level": 2,
-          "title": "this",
-          "slug": "this"
-        },
-        {
-          "level": 2,
-          "title": "执行上下文栈",
-          "slug": "执行上下文栈"
-        },
-        {
-          "level": 2,
-          "title": "作用域",
-          "slug": "作用域"
-        },
-        {
-          "level": 2,
-          "title": "自由变量到作用域链",
-          "slug": "自由变量到作用域链"
-        },
-        {
-          "level": 2,
-          "title": "闭包",
-          "slug": "闭包"
+          "title": "webpack 初始化",
+          "slug": "webpack-初始化"
         }
       ],
-      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+      "summary": "\n详细配置参考 webpack中文文档\n\n创建项目目录  cd project\n\n在命令行工具中运行 yarn init\n\n安装webpack包 yarn install webpack webpack-cli --dev\n\n安装webpack插件 `yarn install webpack-dev ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "常用函数",
+      "frontmatter": {
+        "title": "常用函数",
+        "date": "2019-5-29",
+        "tags": [
+          "Javascript",
+          "工具"
+        ],
+        "description": "/jquery ajax函数/\nfunction Ajax(url, type, success, error) {\n  $.ajax({\n    url: url,\n    type: type,\n    dataType: 'json',\n    timeout: 10000,\n    success: function(d) {\n      var data = d.dat ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2019-5-29-utils-func.html",
+      "relativePath": "_posts/2019-5-29-utils-func.md",
+      "key": "v-48f50183",
+      "path": "/2019/05/29/utils-func/",
+      "summary": "/jquery ajax函数/\nfunction Ajax(url, type, success, error) {\n  $.ajax({\n    url: url,\n    type: type,\n    dataType: 'json',\n    timeout: 10000,\n    success: function(d) {\n      var data = d.dat ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/24/2021, 5:13:42 PM"
     },
     {
       "title": "JS原型",
@@ -114,13 +113,13 @@ export const siteData = {
           "Webpack",
           "工具"
         ],
-        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefined  // ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
       "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
       "relativePath": "_posts/2018-9-5-javascript-prototype.md",
-      "key": "v-103129dd",
+      "key": "v-41c1ad79",
       "path": "/2019/05/28/javascript-prototype/",
       "headers": [
         {
@@ -164,7 +163,129 @@ export const siteData = {
           "slug": "es6中class"
         }
       ],
-      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefined  // ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "JS设计模式",
+      "frontmatter": {
+        "title": "JS设计模式",
+        "date": "2019-4-5",
+        "tags": [
+          "Javascript",
+          "设计模式"
+        ],
+        "description": "\n何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\n\nUNIX/LINUX设计思想\n\n参考文献 《UNIX/LINUX设计思想》\n\n准则1: 小即是美\n准则2: 让每个程 ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2019-4-5-javascript-design.html",
+      "relativePath": "_posts/2019-4-5-javascript-design.md",
+      "key": "v-701115ba",
+      "path": "/2019/04/05/javascript-design/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "设计原则",
+          "slug": "设计原则"
+        },
+        {
+          "level": 3,
+          "title": "何为设计",
+          "slug": "何为设计"
+        },
+        {
+          "level": 3,
+          "title": "UNIX/LINUX设计思想",
+          "slug": "unix-linux设计思想"
+        },
+        {
+          "level": 2,
+          "title": "SOLID五大设计原则",
+          "slug": "solid五大设计原则"
+        },
+        {
+          "level": 2,
+          "title": "设计模式",
+          "slug": "设计模式"
+        },
+        {
+          "level": 3,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 3,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 3,
+          "title": "适配器模式",
+          "slug": "适配器模式"
+        },
+        {
+          "level": 3,
+          "title": "装饰器模式",
+          "slug": "装饰器模式"
+        }
+      ],
+      "summary": "\n何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\n\nUNIX/LINUX设计思想\n\n参考文献 《UNIX/LINUX设计思想》\n\n准则1: 小即是美\n准则2: 让每个程 ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "JS闭包",
+      "frontmatter": {
+        "title": "JS闭包",
+        "date": "2018-9-25",
+        "tags": [
+          "Javascript"
+        ],
+        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\nconsole.log(a) // Uncaught ReferenceError: a is not defined\n\nconsole.log(a) // undefined\nvar a\n\ncon ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
+      "relativePath": "_posts/2018-9-25-javascript-closure.md",
+      "key": "v-74e62bc3",
+      "path": "/2018/09/25/javascript-closure/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "执行上下文",
+          "slug": "执行上下文"
+        },
+        {
+          "level": 2,
+          "title": "this",
+          "slug": "this"
+        },
+        {
+          "level": 2,
+          "title": "执行上下文栈",
+          "slug": "执行上下文栈"
+        },
+        {
+          "level": 2,
+          "title": "作用域",
+          "slug": "作用域"
+        },
+        {
+          "level": 2,
+          "title": "自由变量到作用域链",
+          "slug": "自由变量到作用域链"
+        },
+        {
+          "level": 2,
+          "title": "闭包",
+          "slug": "闭包"
+        }
+      ],
+      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\nconsole.log(a) // Uncaught ReferenceError: a is not defined\n\nconsole.log(a) // undefined\nvar a\n\ncon ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -177,13 +298,13 @@ export const siteData = {
         "tags": [
           "业务"
         ],
-        "description": "BEM思想\nBEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。\n命名约定的模式如下：\n` css{3}\n.block{} ...",
+        "description": "\nBEM思想\n\nBEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。\n\n命名约定的模式如下：\n.block{}\n.bloc ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
       "regularPath": "/_posts/2018-9-6-business-standard.html",
       "relativePath": "_posts/2018-9-6-business-standard.md",
-      "key": "v-7113c9e7",
+      "key": "v-2bc63283",
       "path": "/2018/09/06/business-standard/",
       "headers": [
         {
@@ -257,127 +378,7 @@ export const siteData = {
           "slug": "controller目录"
         }
       ],
-      "summary": "BEM思想\nBEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。\n命名约定的模式如下：\n` css{3}\n.block{} ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "JS设计模式",
-      "frontmatter": {
-        "title": "JS设计模式",
-        "date": "2019-4-5",
-        "tags": [
-          "Javascript",
-          "设计模式"
-        ],
-        "description": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2019-4-5-javascript-design.html",
-      "relativePath": "_posts/2019-4-5-javascript-design.md",
-      "key": "v-0d450c87",
-      "path": "/2019/04/05/javascript-design/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "设计原则",
-          "slug": "设计原则"
-        },
-        {
-          "level": 3,
-          "title": "何为设计",
-          "slug": "何为设计"
-        },
-        {
-          "level": 3,
-          "title": "UNIX/LINUX设计思想",
-          "slug": "unix-linux设计思想"
-        },
-        {
-          "level": 2,
-          "title": "SOLID五大设计原则",
-          "slug": "solid五大设计原则"
-        },
-        {
-          "level": 2,
-          "title": "设计模式",
-          "slug": "设计模式"
-        },
-        {
-          "level": 3,
-          "title": "工厂模式",
-          "slug": "工厂模式"
-        },
-        {
-          "level": 3,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 3,
-          "title": "适配器模式",
-          "slug": "适配器模式"
-        },
-        {
-          "level": 3,
-          "title": "装饰器模式",
-          "slug": "装饰器模式"
-        }
-      ],
-      "summary": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "Webpack 初始化",
-      "frontmatter": {
-        "title": "Webpack 初始化",
-        "date": "2019-5-28",
-        "tags": [
-          "Webpack",
-          "工具"
-        ],
-        "description": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2019-5-28-webpack-init.html",
-      "relativePath": "_posts/2019-5-28-webpack-init.md",
-      "key": "v-971aa872",
-      "path": "/2019/05/28/webpack-init/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "webpack 初始化",
-          "slug": "webpack-初始化"
-        }
-      ],
-      "summary": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "常用函数",
-      "frontmatter": {
-        "title": "常用函数",
-        "date": "2019-5-29",
-        "tags": [
-          "Javascript",
-          "工具"
-        ],
-        "description": "` js\n/jquery ajax函数/\nfunction Ajax(url, type, success, error) {\n  $.ajax({\n    url: url,\n    type: type,\n    dataType: 'json',\n    timeout: 10000,\n    success: function(d) {\n      var dat ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2019-5-29-utils-func.html",
-      "relativePath": "_posts/2019-5-29-utils-func.md",
-      "key": "v-9100e232",
-      "path": "/2019/05/29/utils-func/",
-      "summary": "` js\n/jquery ajax函数/\nfunction Ajax(url, type, success, error) {\n  $.ajax({\n    url: url,\n    type: type,\n    dataType: 'json',\n    timeout: 10000,\n    success: function(d) {\n      var dat ...",
+      "summary": "\nBEM思想\n\nBEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。\n\n命名约定的模式如下：\n.block{}\n.bloc ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -430,20 +431,20 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "FrontmatterPagination",
-        "title": "业务 Tag"
-      },
-      "regularPath": "/tag/%E4%B8%9A%E5%8A%A1/",
-      "key": "v-038768cf",
-      "path": "/tag/业务/"
-    },
-    {
-      "frontmatter": {
-        "layout": "FrontmatterPagination",
         "title": "设计模式 Tag"
       },
       "regularPath": "/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
       "key": "v-ae3001b6",
       "path": "/tag/设计模式/"
+    },
+    {
+      "frontmatter": {
+        "layout": "FrontmatterPagination",
+        "title": "业务 Tag"
+      },
+      "regularPath": "/tag/%E4%B8%9A%E5%8A%A1/",
+      "key": "v-038768cf",
+      "path": "/tag/业务/"
     },
     {
       "frontmatter": {

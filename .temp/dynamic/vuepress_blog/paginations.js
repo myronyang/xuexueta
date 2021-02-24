@@ -43,19 +43,19 @@ export default [{
 },
 {
   pid: "tag",
-  id: "业务",
+  id: "设计模式",
   filter: filters.tag,
   sorter: sorters.tag,
-  pages: [{"path":"/tag/业务/","interval":[0,1]}],
+  pages: [{"path":"/tag/设计模式/","interval":[0,1]}],
   prevText: "Prev",
   nextText: "Next",
 },
 {
   pid: "tag",
-  id: "设计模式",
+  id: "业务",
   filter: filters.tag,
   sorter: sorters.tag,
-  pages: [{"path":"/tag/设计模式/","interval":[0,1]}],
+  pages: [{"path":"/tag/业务/","interval":[0,1]}],
   prevText: "Prev",
   nextText: "Next",
 }]
