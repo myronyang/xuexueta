@@ -8,19 +8,6 @@ export const siteData = {
   "headTags": [],
   "pages": [
     {
-      "title": "About",
-      "frontmatter": {
-        "title": "About",
-        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
-      },
-      "regularPath": "/",
-      "relativePath": "Readme.md",
-      "key": "v-2cf116e1",
-      "path": "/",
-      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ...",
-      "lastUpdated": "2/24/2021, 5:13:42 PM"
-    },
-    {
       "title": "JS异步",
       "frontmatter": {
         "title": "JS异步",
@@ -52,6 +39,19 @@ export const siteData = {
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "About",
+      "frontmatter": {
+        "title": "About",
+        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+      },
+      "regularPath": "/",
+      "relativePath": "Readme.md",
+      "key": "v-2cf116e1",
+      "path": "/",
+      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ...",
+      "lastUpdated": "2/24/2021, 5:13:42 PM"
     },
     {
       "title": "开发规范",
@@ -147,134 +147,54 @@ export const siteData = {
       "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
-      "title": "JS设计模式",
+      "title": "JS闭包",
       "frontmatter": {
-        "title": "JS设计模式",
-        "date": "2019-4-5",
+        "title": "JS闭包",
+        "date": "2018-9-25",
         "tags": [
-          "Javascript",
-          "设计模式"
+          "Javascript"
         ],
-        "description": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
+        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
-      "regularPath": "/_posts/2019-4-5-javascript-design.html",
-      "relativePath": "_posts/2019-4-5-javascript-design.md",
-      "key": "v-0d450c87",
-      "path": "/2019/04/05/javascript-design/",
+      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
+      "relativePath": "_posts/2018-9-25-javascript-closure.md",
+      "key": "v-bddd1db2",
+      "path": "/2018/09/25/javascript-closure/",
       "headers": [
         {
           "level": 2,
-          "title": "设计原则",
-          "slug": "设计原则"
-        },
-        {
-          "level": 3,
-          "title": "何为设计",
-          "slug": "何为设计"
-        },
-        {
-          "level": 3,
-          "title": "UNIX/LINUX设计思想",
-          "slug": "unix-linux设计思想"
+          "title": "执行上下文",
+          "slug": "执行上下文"
         },
         {
           "level": 2,
-          "title": "SOLID五大设计原则",
-          "slug": "solid五大设计原则"
+          "title": "this",
+          "slug": "this"
         },
         {
           "level": 2,
-          "title": "设计模式",
-          "slug": "设计模式"
+          "title": "执行上下文栈",
+          "slug": "执行上下文栈"
         },
         {
-          "level": 3,
-          "title": "工厂模式",
-          "slug": "工厂模式"
+          "level": 2,
+          "title": "作用域",
+          "slug": "作用域"
         },
         {
-          "level": 3,
-          "title": "单例模式",
-          "slug": "单例模式"
+          "level": 2,
+          "title": "自由变量到作用域链",
+          "slug": "自由变量到作用域链"
         },
         {
-          "level": 3,
-          "title": "适配器模式",
-          "slug": "适配器模式"
-        },
-        {
-          "level": 3,
-          "title": "装饰器模式",
-          "slug": "装饰器模式"
+          "level": 2,
+          "title": "闭包",
+          "slug": "闭包"
         }
       ],
-      "summary": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "JS原型",
-      "frontmatter": {
-        "title": "JS原型",
-        "date": "2019-5-28",
-        "tags": [
-          "Webpack",
-          "工具"
-        ],
-        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
-      "relativePath": "_posts/2018-9-5-javascript-prototype.md",
-      "key": "v-103129dd",
-      "path": "/2019/05/28/javascript-prototype/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "数据类型",
-          "slug": "数据类型"
-        },
-        {
-          "level": 2,
-          "title": "函数和对象",
-          "slug": "函数和对象"
-        },
-        {
-          "level": 2,
-          "title": "prototype原型",
-          "slug": "prototype原型"
-        },
-        {
-          "level": 2,
-          "title": "隐式原型",
-          "slug": "隐式原型"
-        },
-        {
-          "level": 2,
-          "title": "instanceof",
-          "slug": "instanceof"
-        },
-        {
-          "level": 2,
-          "title": "继承",
-          "slug": "继承"
-        },
-        {
-          "level": 2,
-          "title": "灵活性",
-          "slug": "灵活性"
-        },
-        {
-          "level": 2,
-          "title": "es6中class",
-          "slug": "es6中class"
-        }
-      ],
-      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -346,57 +266,73 @@ export const siteData = {
       "summary": "\n` js\n/**\n 存储Storage\n */\nexport const Storage = {\n  set (name, content) {\n    if (!name) return\n    if (typeof content !== 'string') {\n      content = JSON.stringify(content)\n    } ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/24/2021, 5:13:42 PM"
+      "lastUpdated": "2/24/2021, 6:43:31 PM"
     },
     {
-      "title": "JS闭包",
+      "title": "JS设计模式",
       "frontmatter": {
-        "title": "JS闭包",
-        "date": "2018-9-25",
+        "title": "JS设计模式",
+        "date": "2019-4-5",
         "tags": [
-          "Javascript"
+          "Javascript",
+          "设计模式"
         ],
-        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+        "description": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
-      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
-      "relativePath": "_posts/2018-9-25-javascript-closure.md",
-      "key": "v-bddd1db2",
-      "path": "/2018/09/25/javascript-closure/",
+      "regularPath": "/_posts/2019-4-5-javascript-design.html",
+      "relativePath": "_posts/2019-4-5-javascript-design.md",
+      "key": "v-0d450c87",
+      "path": "/2019/04/05/javascript-design/",
       "headers": [
         {
           "level": 2,
-          "title": "执行上下文",
-          "slug": "执行上下文"
+          "title": "设计原则",
+          "slug": "设计原则"
+        },
+        {
+          "level": 3,
+          "title": "何为设计",
+          "slug": "何为设计"
+        },
+        {
+          "level": 3,
+          "title": "UNIX/LINUX设计思想",
+          "slug": "unix-linux设计思想"
         },
         {
           "level": 2,
-          "title": "this",
-          "slug": "this"
+          "title": "SOLID五大设计原则",
+          "slug": "solid五大设计原则"
         },
         {
           "level": 2,
-          "title": "执行上下文栈",
-          "slug": "执行上下文栈"
+          "title": "设计模式",
+          "slug": "设计模式"
         },
         {
-          "level": 2,
-          "title": "作用域",
-          "slug": "作用域"
+          "level": 3,
+          "title": "工厂模式",
+          "slug": "工厂模式"
         },
         {
-          "level": 2,
-          "title": "自由变量到作用域链",
-          "slug": "自由变量到作用域链"
+          "level": 3,
+          "title": "单例模式",
+          "slug": "单例模式"
         },
         {
-          "level": 2,
-          "title": "闭包",
-          "slug": "闭包"
+          "level": 3,
+          "title": "适配器模式",
+          "slug": "适配器模式"
+        },
+        {
+          "level": 3,
+          "title": "装饰器模式",
+          "slug": "装饰器模式"
         }
       ],
-      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+      "summary": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -426,6 +362,70 @@ export const siteData = {
         }
       ],
       "summary": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "JS原型",
+      "frontmatter": {
+        "title": "JS原型",
+        "date": "2019-5-28",
+        "tags": [
+          "Webpack",
+          "工具"
+        ],
+        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
+      "relativePath": "_posts/2018-9-5-javascript-prototype.md",
+      "key": "v-103129dd",
+      "path": "/2019/05/28/javascript-prototype/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数据类型",
+          "slug": "数据类型"
+        },
+        {
+          "level": 2,
+          "title": "函数和对象",
+          "slug": "函数和对象"
+        },
+        {
+          "level": 2,
+          "title": "prototype原型",
+          "slug": "prototype原型"
+        },
+        {
+          "level": 2,
+          "title": "隐式原型",
+          "slug": "隐式原型"
+        },
+        {
+          "level": 2,
+          "title": "instanceof",
+          "slug": "instanceof"
+        },
+        {
+          "level": 2,
+          "title": "继承",
+          "slug": "继承"
+        },
+        {
+          "level": 2,
+          "title": "灵活性",
+          "slug": "灵活性"
+        },
+        {
+          "level": 2,
+          "title": "es6中class",
+          "slug": "es6中class"
+        }
+      ],
+      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -469,6 +469,15 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "FrontmatterPagination",
+        "title": "工具 Tag"
+      },
+      "regularPath": "/tag/%E5%B7%A5%E5%85%B7/",
+      "key": "v-97019ce8",
+      "path": "/tag/工具/"
+    },
+    {
+      "frontmatter": {
+        "layout": "FrontmatterPagination",
         "title": "设计模式 Tag"
       },
       "regularPath": "/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
@@ -483,15 +492,6 @@ export const siteData = {
       "regularPath": "/tag/Webpack/",
       "key": "v-ad8a01a8",
       "path": "/tag/Webpack/"
-    },
-    {
-      "frontmatter": {
-        "layout": "FrontmatterPagination",
-        "title": "工具 Tag"
-      },
-      "regularPath": "/tag/%E5%B7%A5%E5%85%B7/",
-      "key": "v-97019ce8",
-      "path": "/tag/工具/"
     },
     {
       "frontmatter": {

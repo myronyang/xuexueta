@@ -34,6 +34,15 @@ export default [{
 },
 {
   pid: "tag",
+  id: "工具",
+  filter: filters.tag,
+  sorter: sorters.tag,
+  pages: [{"path":"/tag/工具/","interval":[0,3]}],
+  prevText: "Prev",
+  nextText: "Next",
+},
+{
+  pid: "tag",
   id: "设计模式",
   filter: filters.tag,
   sorter: sorters.tag,
@@ -47,15 +56,6 @@ export default [{
   filter: filters.tag,
   sorter: sorters.tag,
   pages: [{"path":"/tag/Webpack/","interval":[0,2]}],
-  prevText: "Prev",
-  nextText: "Next",
-},
-{
-  pid: "tag",
-  id: "工具",
-  filter: filters.tag,
-  sorter: sorters.tag,
-  pages: [{"path":"/tag/工具/","interval":[0,3]}],
   prevText: "Prev",
   nextText: "Next",
 }]

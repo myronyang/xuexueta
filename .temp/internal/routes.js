@@ -9,18 +9,6 @@ import GlobalLayout from "D:\\Github\\blog\\node_modules\\_@vuepress_theme-blog@
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-2cf116e1",
-    path: "/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2cf116e1").then(next)
-    },
-  },
-  {
-    path: "/index.html",
-    redirect: "/"
-  },
-  {
     name: "v-27d9570d",
     path: "/2018/10/27/javascript-async/",
     component: GlobalLayout,
@@ -35,6 +23,18 @@ export const routes = [
   {
     path: "/_posts/2018-10-27-javascript-async.html",
     redirect: "/2018/10/27/javascript-async/"
+  },
+  {
+    name: "v-2cf116e1",
+    path: "/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2cf116e1").then(next)
+    },
+  },
+  {
+    path: "/index.html",
+    redirect: "/"
   },
   {
     name: "v-7113c9e7",
@@ -53,36 +53,20 @@ export const routes = [
     redirect: "/2018/09/06/business-standard/"
   },
   {
-    name: "v-0d450c87",
-    path: "/2019/04/05/javascript-design/",
+    name: "v-bddd1db2",
+    path: "/2018/09/25/javascript-closure/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-0d450c87").then(next)
+      ensureAsyncComponentsLoaded("Post", "v-bddd1db2").then(next)
     },
   },
   {
-    path: "/2019/04/05/javascript-design/index.html",
-    redirect: "/2019/04/05/javascript-design/"
+    path: "/2018/09/25/javascript-closure/index.html",
+    redirect: "/2018/09/25/javascript-closure/"
   },
   {
-    path: "/_posts/2019-4-5-javascript-design.html",
-    redirect: "/2019/04/05/javascript-design/"
-  },
-  {
-    name: "v-103129dd",
-    path: "/2019/05/28/javascript-prototype/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-103129dd").then(next)
-    },
-  },
-  {
-    path: "/2019/05/28/javascript-prototype/index.html",
-    redirect: "/2019/05/28/javascript-prototype/"
-  },
-  {
-    path: "/_posts/2018-9-5-javascript-prototype.html",
-    redirect: "/2019/05/28/javascript-prototype/"
+    path: "/_posts/2018-9-25-javascript-closure.html",
+    redirect: "/2018/09/25/javascript-closure/"
   },
   {
     name: "v-9100e232",
@@ -101,20 +85,20 @@ export const routes = [
     redirect: "/2019/05/29/utils-func/"
   },
   {
-    name: "v-bddd1db2",
-    path: "/2018/09/25/javascript-closure/",
+    name: "v-0d450c87",
+    path: "/2019/04/05/javascript-design/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-bddd1db2").then(next)
+      ensureAsyncComponentsLoaded("Post", "v-0d450c87").then(next)
     },
   },
   {
-    path: "/2018/09/25/javascript-closure/index.html",
-    redirect: "/2018/09/25/javascript-closure/"
+    path: "/2019/04/05/javascript-design/index.html",
+    redirect: "/2019/04/05/javascript-design/"
   },
   {
-    path: "/_posts/2018-9-25-javascript-closure.html",
-    redirect: "/2018/09/25/javascript-closure/"
+    path: "/_posts/2019-4-5-javascript-design.html",
+    redirect: "/2019/04/05/javascript-design/"
   },
   {
     name: "v-971aa872",
@@ -131,6 +115,22 @@ export const routes = [
   {
     path: "/_posts/2019-5-28-webpack-init.html",
     redirect: "/2019/05/28/webpack-init/"
+  },
+  {
+    name: "v-103129dd",
+    path: "/2019/05/28/javascript-prototype/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-103129dd").then(next)
+    },
+  },
+  {
+    path: "/2019/05/28/javascript-prototype/index.html",
+    redirect: "/2019/05/28/javascript-prototype/"
+  },
+  {
+    path: "/_posts/2018-9-5-javascript-prototype.html",
+    redirect: "/2019/05/28/javascript-prototype/"
   },
   {
     name: "v-424df898",
@@ -185,6 +185,19 @@ export const routes = [
     redirect: "/tag/业务/"
   },
   {
+    name: "v-97019ce8",
+    path: "/tag/工具/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("FrontmatterPagination", "v-97019ce8").then(next)
+    },
+    meta: {"pid":"tag","id":"工具"}
+  },
+  {
+    path: "/tag/工具/index.html",
+    redirect: "/tag/工具/"
+  },
+  {
     name: "v-ae3001b6",
     path: "/tag/设计模式/",
     component: GlobalLayout,
@@ -209,19 +222,6 @@ export const routes = [
   {
     path: "/tag/Webpack/index.html",
     redirect: "/tag/Webpack/"
-  },
-  {
-    name: "v-97019ce8",
-    path: "/tag/工具/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("FrontmatterPagination", "v-97019ce8").then(next)
-    },
-    meta: {"pid":"tag","id":"工具"}
-  },
-  {
-    path: "/tag/工具/index.html",
-    redirect: "/tag/工具/"
   },
   {
     name: "v-c3507bb6",
