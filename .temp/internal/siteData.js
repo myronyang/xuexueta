@@ -8,6 +8,19 @@ export const siteData = {
   "headTags": [],
   "pages": [
     {
+      "title": "About",
+      "frontmatter": {
+        "title": "About",
+        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+      },
+      "regularPath": "/",
+      "relativePath": "Readme.md",
+      "key": "v-2cf116e1",
+      "path": "/",
+      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ...",
+      "lastUpdated": "2/24/2021, 5:13:42 PM"
+    },
+    {
       "title": "JS异步",
       "frontmatter": {
         "title": "JS异步",
@@ -33,6 +46,11 @@ export const siteData = {
           "level": 2,
           "title": "jQuery异步",
           "slug": "jquery异步"
+        },
+        {
+          "level": 2,
+          "title": "ES6的Promise",
+          "slug": "es6的promise"
         }
       ],
       "summary": "JS 为何会有异步\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\n`js\nvar i,\n\tt = Date.now()\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n` ...",
@@ -41,17 +59,120 @@ export const siteData = {
       "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
-      "title": "About",
+      "title": "JS闭包",
       "frontmatter": {
-        "title": "About",
-        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+        "title": "JS闭包",
+        "date": "2018-9-25",
+        "tags": [
+          "Javascript"
+        ],
+        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
       },
-      "regularPath": "/",
-      "relativePath": "Readme.md",
-      "key": "v-2cf116e1",
-      "path": "/",
-      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ...",
-      "lastUpdated": "2/24/2021, 5:13:42 PM"
+      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
+      "relativePath": "_posts/2018-9-25-javascript-closure.md",
+      "key": "v-bddd1db2",
+      "path": "/2018/09/25/javascript-closure/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "执行上下文",
+          "slug": "执行上下文"
+        },
+        {
+          "level": 2,
+          "title": "this",
+          "slug": "this"
+        },
+        {
+          "level": 2,
+          "title": "执行上下文栈",
+          "slug": "执行上下文栈"
+        },
+        {
+          "level": 2,
+          "title": "作用域",
+          "slug": "作用域"
+        },
+        {
+          "level": 2,
+          "title": "自由变量到作用域链",
+          "slug": "自由变量到作用域链"
+        },
+        {
+          "level": 2,
+          "title": "闭包",
+          "slug": "闭包"
+        }
+      ],
+      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "JS原型",
+      "frontmatter": {
+        "title": "JS原型",
+        "date": "2018-9-5",
+        "tags": [
+          "Javascript"
+        ],
+        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
+      "relativePath": "_posts/2018-9-5-javascript-prototype.md",
+      "key": "v-103129dd",
+      "path": "/2018/09/05/javascript-prototype/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数据类型",
+          "slug": "数据类型"
+        },
+        {
+          "level": 2,
+          "title": "函数和对象",
+          "slug": "函数和对象"
+        },
+        {
+          "level": 2,
+          "title": "prototype原型",
+          "slug": "prototype原型"
+        },
+        {
+          "level": 2,
+          "title": "隐式原型",
+          "slug": "隐式原型"
+        },
+        {
+          "level": 2,
+          "title": "instanceof",
+          "slug": "instanceof"
+        },
+        {
+          "level": 2,
+          "title": "继承",
+          "slug": "继承"
+        },
+        {
+          "level": 2,
+          "title": "灵活性",
+          "slug": "灵活性"
+        },
+        {
+          "level": 2,
+          "title": "es6中class",
+          "slug": "es6中class"
+        }
+      ],
+      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
       "title": "开发规范",
@@ -147,54 +268,30 @@ export const siteData = {
       "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
-      "title": "JS闭包",
+      "title": "Webpack 初始化",
       "frontmatter": {
-        "title": "JS闭包",
-        "date": "2018-9-25",
+        "title": "Webpack 初始化",
+        "date": "2019-5-28",
         "tags": [
-          "Javascript"
+          "Webpack",
+          "工具"
         ],
-        "description": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+        "description": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
         "layout": "Post",
         "permalink": "/:year/:month/:day/:slug"
       },
-      "regularPath": "/_posts/2018-9-25-javascript-closure.html",
-      "relativePath": "_posts/2018-9-25-javascript-closure.md",
-      "key": "v-bddd1db2",
-      "path": "/2018/09/25/javascript-closure/",
+      "regularPath": "/_posts/2019-5-28-webpack-init.html",
+      "relativePath": "_posts/2019-5-28-webpack-init.md",
+      "key": "v-971aa872",
+      "path": "/2019/05/28/webpack-init/",
       "headers": [
         {
           "level": 2,
-          "title": "执行上下文",
-          "slug": "执行上下文"
-        },
-        {
-          "level": 2,
-          "title": "this",
-          "slug": "this"
-        },
-        {
-          "level": 2,
-          "title": "执行上下文栈",
-          "slug": "执行上下文栈"
-        },
-        {
-          "level": 2,
-          "title": "作用域",
-          "slug": "作用域"
-        },
-        {
-          "level": 2,
-          "title": "自由变量到作用域链",
-          "slug": "自由变量到作用域链"
-        },
-        {
-          "level": 2,
-          "title": "闭包",
-          "slug": "闭包"
+          "title": "webpack 初始化",
+          "slug": "webpack-初始化"
         }
       ],
-      "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
+      "summary": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
@@ -338,99 +435,6 @@ export const siteData = {
       "lastUpdated": "2/23/2021, 4:12:01 PM"
     },
     {
-      "title": "Webpack 初始化",
-      "frontmatter": {
-        "title": "Webpack 初始化",
-        "date": "2019-5-28",
-        "tags": [
-          "Webpack",
-          "工具"
-        ],
-        "description": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2019-5-28-webpack-init.html",
-      "relativePath": "_posts/2019-5-28-webpack-init.md",
-      "key": "v-971aa872",
-      "path": "/2019/05/28/webpack-init/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "webpack 初始化",
-          "slug": "webpack-初始化"
-        }
-      ],
-      "summary": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
-      "title": "JS原型",
-      "frontmatter": {
-        "title": "JS原型",
-        "date": "2019-5-28",
-        "tags": [
-          "Webpack",
-          "工具"
-        ],
-        "description": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2018-9-5-javascript-prototype.html",
-      "relativePath": "_posts/2018-9-5-javascript-prototype.md",
-      "key": "v-103129dd",
-      "path": "/2019/05/28/javascript-prototype/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "数据类型",
-          "slug": "数据类型"
-        },
-        {
-          "level": 2,
-          "title": "函数和对象",
-          "slug": "函数和对象"
-        },
-        {
-          "level": 2,
-          "title": "prototype原型",
-          "slug": "prototype原型"
-        },
-        {
-          "level": 2,
-          "title": "隐式原型",
-          "slug": "隐式原型"
-        },
-        {
-          "level": 2,
-          "title": "instanceof",
-          "slug": "instanceof"
-        },
-        {
-          "level": 2,
-          "title": "继承",
-          "slug": "继承"
-        },
-        {
-          "level": 2,
-          "title": "灵活性",
-          "slug": "灵活性"
-        },
-        {
-          "level": 2,
-          "title": "es6中class",
-          "slug": "es6中class"
-        }
-      ],
-      "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
       "frontmatter": {
         "layout": "Layout",
         "title": "貼文"
@@ -469,6 +473,15 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "FrontmatterPagination",
+        "title": "Webpack Tag"
+      },
+      "regularPath": "/tag/Webpack/",
+      "key": "v-ad8a01a8",
+      "path": "/tag/Webpack/"
+    },
+    {
+      "frontmatter": {
+        "layout": "FrontmatterPagination",
         "title": "工具 Tag"
       },
       "regularPath": "/tag/%E5%B7%A5%E5%85%B7/",
@@ -483,15 +496,6 @@ export const siteData = {
       "regularPath": "/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
       "key": "v-ae3001b6",
       "path": "/tag/设计模式/"
-    },
-    {
-      "frontmatter": {
-        "layout": "FrontmatterPagination",
-        "title": "Webpack Tag"
-      },
-      "regularPath": "/tag/Webpack/",
-      "key": "v-ad8a01a8",
-      "path": "/tag/Webpack/"
     },
     {
       "frontmatter": {
@@ -559,7 +563,7 @@ export const siteData = {
       ],
       "copyright": [
         {
-          "text": "MyronYang © 2020",
+          "text": "Myron Yang © 2020-2021",
           "link": ""
         }
       ]

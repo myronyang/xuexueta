@@ -10,6 +10,7 @@ export default {
       "pageKeys": [
         "v-27d9570d",
         "v-bddd1db2",
+        "v-103129dd",
         "v-9100e232",
         "v-0d450c87"
       ]
@@ -22,14 +23,21 @@ export default {
         "v-7113c9e7"
       ]
     },
+    "Webpack": {
+      "key": "Webpack",
+      "scope": "tag",
+      "path": "/tag/Webpack/",
+      "pageKeys": [
+        "v-971aa872"
+      ]
+    },
     "工具": {
       "key": "工具",
       "scope": "tag",
       "path": "/tag/工具/",
       "pageKeys": [
-        "v-9100e232",
         "v-971aa872",
-        "v-103129dd"
+        "v-9100e232"
       ]
     },
     "设计模式": {
@@ -38,15 +46,6 @@ export default {
       "path": "/tag/设计模式/",
       "pageKeys": [
         "v-0d450c87"
-      ]
-    },
-    "Webpack": {
-      "key": "Webpack",
-      "scope": "tag",
-      "path": "/tag/Webpack/",
-      "pageKeys": [
-        "v-971aa872",
-        "v-103129dd"
       ]
     }
   }

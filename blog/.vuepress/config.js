@@ -74,7 +74,7 @@ module.exports = (options, context, api) => {
         ],
         copyright: [
           {
-            text: "MyronYang © 2020",
+            text: "Myron Yang © 2020-2021",
             link: "",
           },
         ],
@@ -82,6 +82,7 @@ module.exports = (options, context, api) => {
     },
     alias: {
       "@assets": path.resolve(__dirname, "../assets"),
+      "@aliyun": "http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog"
     },
   };
 };

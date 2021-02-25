@@ -1,1 +1,1 @@
-export { default } from "D:\\Github\\blog\\node_modules\\_@vuepress_plugin-blog@1.9.4@@vuepress\\plugin-blog\\lib\\client\\pagination.js"
+export { default } from "/Users/yangpeng/Blog/node_modules/_@vuepress_plugin-blog@1.9.4@@vuepress/plugin-blog/lib/client/pagination.js"

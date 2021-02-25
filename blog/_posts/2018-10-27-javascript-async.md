@@ -132,10 +132,6 @@ var wait = function () {
 wait()
 ```
 
-
-
-
-
 ```js
 function waitHandle() {
   var dtd = $.Deferred();
@@ -161,10 +157,53 @@ $.when(w)
 ```
 
 
+## ES6的Promise
 
+#### 传统的异步操作
+```js
+var wait = function () {
+    var task = function () {
+        console.log('执行完成')
+    }
+    setTimeout(task, 2000)
+}
+wait()
+```
 
+接下来将使用 ES6 的Promise进行封装
+```js
+const wait =  function () {
+    // 定义一个 promise 对象
+    const promise = new Promise((resolve, reject) => {
+        // 将之前的异步操作，包括到这个 new Promise 函数之内
+        const task = function () {
+            console.log('执行完成')
+            resolve()  // callback 中去执行 resolve 或者 reject
+        }
+        setTimeout(task, 2000)
+    })
+    // 返回 promise 对象
+    return promise
+}
+```
+从整体看来，感觉这次比用 jquery 那次简单一些，逻辑上也更加清晰一些。
+- 将之前的异步操作那几行程序，用new Promise((resolve,reject) => {.....})包装起来，最后return即可
+- 异步操作的内部，在callback中执行resolve()（表明成功了，失败的话执行reject）
 
-
+但是`wait()`返回的是`Promise`对象，而promise对象有then属性。
+```js
+const w = wait()
+w.then(() => {
+    console.log('ok 1')
+}, () => {
+    console.log('err 1')
+}).then(() => {
+    console.log('ok 2')
+}, () => {
+    console.log('err 2')
+})
+```
+then还是和之前一样，接收两个参数（函数），第一个在成功时（触发resolve）执行，第二个在失败时(触发reject)时执行。而且，then还可以进行链式操作。
 
 
 
