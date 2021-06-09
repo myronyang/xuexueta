@@ -11,13 +11,13 @@ export const siteData = {
       "title": "About",
       "frontmatter": {
         "title": "About",
-        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ..."
+        "description": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work and live in Wuhan ..."
       },
       "regularPath": "/",
       "relativePath": "Readme.md",
       "key": "v-2cf116e1",
       "path": "/",
-      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work in Wuhan. Record feelings in work and life, Hope to help you!\n<GetStarte ...",
+      "summary": " Hi, I'm Peng Yang\nAs you can tell from my posts, I'm a software engineer. Currently, I work and live in Wuhan ...",
       "lastUpdated": "2/24/2021, 5:13:42 PM"
     },
     {
@@ -51,12 +51,52 @@ export const siteData = {
           "level": 2,
           "title": "ES6的Promise",
           "slug": "es6的promise"
+        },
+        {
+          "level": 3,
+          "title": "传统的异步操作",
+          "slug": "传统的异步操作"
+        },
+        {
+          "level": 3,
+          "title": "Promise基本应用",
+          "slug": "promise基本应用"
+        },
+        {
+          "level": 3,
+          "title": "串联多个异步操作",
+          "slug": "串联多个异步操作"
+        },
+        {
+          "level": 3,
+          "title": "Promise.all和Promise.race的应用",
+          "slug": "promise-all和promise-race的应用"
+        },
+        {
+          "level": 3,
+          "title": "Promise/A+ 规范",
+          "slug": "promise-a-规范"
+        },
+        {
+          "level": 2,
+          "title": "ES6的Generator",
+          "slug": "es6的generator"
+        },
+        {
+          "level": 3,
+          "title": "Generator简介",
+          "slug": "generator简介"
+        },
+        {
+          "level": 3,
+          "title": "Iterator遍历器",
+          "slug": "iterator遍历器"
         }
       ],
       "summary": "JS 为何会有异步\nJS 是单线程的语言，所谓“单线程”就是一根筋，对于拿到的程序，一行一行的执行，上面的没执行为完，那就等着。\n`js\nvar i,\n\tt = Date.now()\nfor (i = 0; i < 100000000; i++) {\n\t// ...\n}\nconsole.log(Date.now() - t) // 250\n` ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/24/2021, 10:54:06 PM"
     },
     {
       "title": "JS闭包",
@@ -109,7 +149,7 @@ export const siteData = {
       "summary": "\n什么是“执行上下文”(也叫做“执行上下文环境”）？我们先不定义，先看以下几种情况。\n第一种情况，变量声明，默认赋值为undefined\n首先我们在浏览器控制台来调试一段代码。\n`js\nconsole.log(a) // Uncaught ReferenceError: a is not defined\nconsole.log(a) // undefined\nv ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/25/2021, 1:31:05 AM"
     },
     {
       "title": "JS原型",
@@ -172,7 +212,7 @@ export const siteData = {
       "summary": "\njs有六种数据类型Number、String、Boolean、Undefined、Null（ECMAScript 2015新增了一种基本数据类型：symbol）\n我们可以用typeof检测数据类型\n`js\ntypeof 123  // Number\ntypeof 'abc' // String\ntypeof true  // Boolean\ntypeof undefin ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/25/2021, 1:31:05 AM"
     },
     {
       "title": "开发规范",
@@ -193,8 +233,8 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
-          "title": "css 命名规范",
-          "slug": "css-命名规范"
+          "title": "CSS命名规范",
+          "slug": "css命名规范"
         },
         {
           "level": 3,
@@ -208,8 +248,8 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "js 命名规范",
-          "slug": "js-命名规范"
+          "title": "JS命名规范",
+          "slug": "js命名规范"
         },
         {
           "level": 3,
@@ -243,29 +283,113 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "简易项目模块划分",
-          "slug": "简易项目模块划分"
+          "title": "Git提交规范",
+          "slug": "git提交规范"
+        },
+        {
+          "level": 2,
+          "title": "Vue开发规范",
+          "slug": "vue开发规范"
         },
         {
           "level": 3,
-          "title": "database目录",
-          "slug": "database目录"
+          "title": "目录结构",
+          "slug": "目录结构"
         },
         {
           "level": 3,
-          "title": "viewmodel目录",
-          "slug": "viewmodel目录"
+          "title": "组件命名规范、组件结构规范",
+          "slug": "组件命名规范、组件结构规范"
         },
         {
           "level": 3,
-          "title": "controller目录",
-          "slug": "controller目录"
+          "title": "组件样式",
+          "slug": "组件样式"
+        },
+        {
+          "level": 3,
+          "title": "Template模板文件",
+          "slug": "template模板文件"
+        },
+        {
+          "level": 3,
+          "title": "Script模块",
+          "slug": "script模块"
         }
       ],
       "summary": "BEM思想\nBEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由Yandex团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。\n命名约定的模式如下：\n` css{3}\n.block{} ...",
       "id": "blog",
       "pid": "blog",
       "lastUpdated": "2/23/2021, 4:12:01 PM"
+    },
+    {
+      "title": "JS设计模式",
+      "frontmatter": {
+        "title": "JS设计模式",
+        "date": "2019-4-5",
+        "tags": [
+          "Javascript",
+          "设计模式"
+        ],
+        "description": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
+        "layout": "Post",
+        "permalink": "/:year/:month/:day/:slug"
+      },
+      "regularPath": "/_posts/2019-4-5-javascript-design.html",
+      "relativePath": "_posts/2019-4-5-javascript-design.md",
+      "key": "v-0d450c87",
+      "path": "/2019/04/05/javascript-design/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "设计原则",
+          "slug": "设计原则"
+        },
+        {
+          "level": 3,
+          "title": "何为设计",
+          "slug": "何为设计"
+        },
+        {
+          "level": 3,
+          "title": "UNIX/LINUX设计思想",
+          "slug": "unix-linux设计思想"
+        },
+        {
+          "level": 2,
+          "title": "SOLID五大设计原则",
+          "slug": "solid五大设计原则"
+        },
+        {
+          "level": 2,
+          "title": "设计模式",
+          "slug": "设计模式"
+        },
+        {
+          "level": 3,
+          "title": "工厂模式",
+          "slug": "工厂模式"
+        },
+        {
+          "level": 3,
+          "title": "单例模式",
+          "slug": "单例模式"
+        },
+        {
+          "level": 3,
+          "title": "适配器模式",
+          "slug": "适配器模式"
+        },
+        {
+          "level": 3,
+          "title": "装饰器模式",
+          "slug": "装饰器模式"
+        }
+      ],
+      "summary": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
+      "id": "blog",
+      "pid": "blog",
+      "lastUpdated": "2/25/2021, 1:31:05 AM"
     },
     {
       "title": "Webpack 初始化",
@@ -294,7 +418,7 @@ export const siteData = {
       "summary": "详细配置参考 webpack中文文档\n创建项目目录  cd project\n在命令行工具中运行 yarn init\n安装webpack包 yarn install webpack webpack-cli --dev\n安装webpack插件 `yarn install we ...",
       "id": "blog",
       "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
+      "lastUpdated": "2/25/2021, 1:31:05 AM"
     },
     {
       "title": "常用函数",
@@ -366,75 +490,6 @@ export const siteData = {
       "lastUpdated": "2/24/2021, 6:43:31 PM"
     },
     {
-      "title": "JS设计模式",
-      "frontmatter": {
-        "title": "JS设计模式",
-        "date": "2019-4-5",
-        "tags": [
-          "Javascript",
-          "设计模式"
-        ],
-        "description": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
-        "layout": "Post",
-        "permalink": "/:year/:month/:day/:slug"
-      },
-      "regularPath": "/_posts/2019-4-5-javascript-design.html",
-      "relativePath": "_posts/2019-4-5-javascript-design.md",
-      "key": "v-0d450c87",
-      "path": "/2019/04/05/javascript-design/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "设计原则",
-          "slug": "设计原则"
-        },
-        {
-          "level": 3,
-          "title": "何为设计",
-          "slug": "何为设计"
-        },
-        {
-          "level": 3,
-          "title": "UNIX/LINUX设计思想",
-          "slug": "unix-linux设计思想"
-        },
-        {
-          "level": 2,
-          "title": "SOLID五大设计原则",
-          "slug": "solid五大设计原则"
-        },
-        {
-          "level": 2,
-          "title": "设计模式",
-          "slug": "设计模式"
-        },
-        {
-          "level": 3,
-          "title": "工厂模式",
-          "slug": "工厂模式"
-        },
-        {
-          "level": 3,
-          "title": "单例模式",
-          "slug": "单例模式"
-        },
-        {
-          "level": 3,
-          "title": "适配器模式",
-          "slug": "适配器模式"
-        },
-        {
-          "level": 3,
-          "title": "装饰器模式",
-          "slug": "装饰器模式"
-        }
-      ],
-      "summary": "何为设计\n即按照一种思路或者标准来实现功能\n功能相同，可以由不同设计方案来实现\n伴随需求的增加，设计的作用才能体现出来\nUNIX/LINUX设计思想\n参考文献 《UNIX/LINUX设计思想》\n准则1: 小即是美 ...",
-      "id": "blog",
-      "pid": "blog",
-      "lastUpdated": "2/23/2021, 4:12:01 PM"
-    },
-    {
       "frontmatter": {
         "layout": "Layout",
         "title": "貼文"
@@ -473,6 +528,15 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "FrontmatterPagination",
+        "title": "设计模式 Tag"
+      },
+      "regularPath": "/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
+      "key": "v-ae3001b6",
+      "path": "/tag/设计模式/"
+    },
+    {
+      "frontmatter": {
+        "layout": "FrontmatterPagination",
         "title": "Webpack Tag"
       },
       "regularPath": "/tag/Webpack/",
@@ -487,15 +551,6 @@ export const siteData = {
       "regularPath": "/tag/%E5%B7%A5%E5%85%B7/",
       "key": "v-97019ce8",
       "path": "/tag/工具/"
-    },
-    {
-      "frontmatter": {
-        "layout": "FrontmatterPagination",
-        "title": "设计模式 Tag"
-      },
-      "regularPath": "/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",
-      "key": "v-ae3001b6",
-      "path": "/tag/设计模式/"
     },
     {
       "frontmatter": {

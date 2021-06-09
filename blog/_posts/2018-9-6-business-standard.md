@@ -5,7 +5,7 @@ tags:
   - 业务
 ---
 
-## css 命名规范
+## CSS命名规范
 
 ### BEM思想
 
@@ -17,11 +17,10 @@ BEM的意思就是块（block）、元素（element）、修饰符（modifier）
 .block__element{}  
 .block--modifier{}  
 ```
-::: tip
-- .block 代表了更高级别的抽象或组件。
-- .block__element 代表.block的后代，用于形成一个完整的.block的整体。
-- .block--modifier代表.block的不同状态或不同版本。
-:::
+
+> .block 代表了更高级别的抽象或组件。\
+> .block__element 代表.block的后代，用于形成一个完整的.block的整体。\
+> .block--modifier代表.block的不同状态或不同版本。
 
 BEM的关键是光凭名字就可以告诉其他开发者某个标记是用来干什么的。通过浏览HTML代码中的class属性，你就能够明白模块之间是如何关联的：有一些仅仅是组件，有一些则是这些组件的子孙或者是元素,还有一些是组件的其他形态或者是修饰符。
 
@@ -57,9 +56,7 @@ BEM的关键是光凭名字就可以告诉其他开发者某个标记是用来�
 </template>
 ```
 
-::: warning
-虽然BEM使其项目结构清晰，但是其命名过于繁琐冗余而可能拉大项目周期。建议在周期短或小项目的情况下精简BEM结合css热处理语言进行缩减
-:::
+> **虽然BEM使其项目结构清晰，但是其命名过于繁琐冗余而可能拉大项目周期。建议在周期短或小项目的情况下精简BEM结合css热处理语言进行缩减**
 
 ``` scss
 .goods-steps {
@@ -304,7 +301,7 @@ bg-image($url)
 
 
 
-## js 命名规范
+## JS命名规范
 
 ### 变量
 必须采用小驼峰式命名法  <font color=#999>命名规范：前缀应当是名词。(函数的名字前缀为动词，以此区分变量和函数)</font>
@@ -402,7 +399,7 @@ export default {
 ```
 
 #### data对象下属性命名
-- 数据列表使用lists结尾
+- 数据列表使用list结尾
 - 数据详情对象使用detail结尾
 - 选中对象使用selected开头
 - 选中样式状态使用active结尾
@@ -415,13 +412,13 @@ data() {
     popupVisible: false,
     selectedSplitPay: {},
     priceDetail: {},
-    couponLists: []
+    couponList: []
   }
 }
 ```
-::: warning
-如果visible有多个属性，建议放在一个对象下
-:::
+
+> **如果visible有多个属性，建议放在一个对象下**
+
 ``` js
 data() {
   return {
@@ -456,9 +453,9 @@ data() {
 ></selected-address>
 ```
 
-#### 获取接口数据方法使用load开头
+#### 获取接口数据方法使用fetch开头
 ``` js
-loadAddressLists() {
+fetchAddressLists() {
   const params = {
     isHot: this.mianBodyType.isHot
   };
@@ -468,7 +465,79 @@ loadAddressLists() {
 }
 ```
 
-## 简易项目模块划分
+
+## Git提交规范
+
+#### 1. commit message格式
+
+>  `<type>:  <subject>`
+>
+> 注意：冒号后面有空格
+
+#### 2. 用于说明 commit 的类别，只允许使用下面7个标识
+
+- feat：新功能（feature）
+- fix：修补bug
+- docs：文档（documentation）
+- style： 格式（不影响代码运行的变动）
+- refactor：重构（即不是新增功能，也不是修改bug的代码变动）
+- test：增加测试
+- chore：构建过程或辅助工具的变动
+
+#### 3. subject  是commit代码的简短描述，末尾不加标点符号
+
+
+
+## Vue开发规范
+
+### 目录结构
+```
+|— config 项目全局配置文件
+|— serves 接口API封装
+|— components 全局通用组件
+|— routes 路由文件
+|— store 全局状态管理
+``` 
+
+### 组件命名规范、组件结构规范
+
+1. #### 组件
+
+组件名以单词大写开头，当多个单词拼写成的组件时，采用驼峰式命名规则。一般是多个单词全拼，减少简写的情况。组件应该都放到components文件夹下，单个页面独立一个文件夹，用来放相对应的vue文件以及页面相关的样式文件，样式少可直接写到页面组件里边，这样更符合组件化的思想。
+
+2. #### 基础组件
+
+- 当项目中需要自定义比较多的基础组件的时候，比如一些button，input，icon，建议以一个统一的单词base开头，或者放到bases文件夹统一管理，这样做的目的是为了方便查找。
+
+- 布局组件以layout开头，或者放到layoutes文件夹统一管理。
+
+3. #### 组件结构
+
+组件结构遵循从上往下template，script，style的结构。
+
+
+### 组件样式
+
+单个组件样式一般可直接写到组件下style标签下，为了防止样式污染，可添加scoped属性，也可以通过设置作用域来防止样式污染，写样式的时候尽量少写元素选择器，为了提高代码查找速度，可以用类选择器。
+
+### Template模板文件
+- 标签语义化，避免清一色的div元素。
+- 多特性，分行写，提高可读性。即一个标签内有多个属性，属性分行写。
+- 指令采用缩写形式。
+- 组件/实例选项中的空行。便于阅读和代码架构清晰。
+- 自定义标签：使用自闭标签的写法。例如：，如果自定义标签中间需要传入slot，则写开始标签和结束标签，结束标签必须加/。
+
+### Script模块
+- 调试信息 console.log() 、debugger使用完及时删除。
+- 无特殊情况不允许使用原生API操作dom,谨慎使用this.$refs直接操作dom。
+- 能用单引号不用双引号， 尽量使用===。
+- 指令缩写：都用指令缩写 (用 : 表示 v-bind: 和用 @ 表示 v-on:)。
+- 用ES6风格编码源码,定义变量使用let,定义常量使用const,使用export,import模块化。
+- 为v-for设置Key值。
+
+
+
+<!-- ## 简易项目模块划分
 当项目业务逻辑多业务量大的时候建议这样划分。当后台接口未完成，写mock数据太麻烦，先自己定义视图数据，保证视图组件字段通用性，最后后台接口数据相转换。
 
 ### database目录
@@ -676,6 +745,4 @@ export class Publish2dControl {
 - addCommunity方法将视图中数据转换成接口中要的数据提交到database的接口中异步返回接口返回结果。
 - setCasePictureList方法将database中的getCaseDetail接口返回的数据处理成视图中所需要的数据结构和属性名称。
 
-::: danger
-具体情况根据项目实际情况划分，不能一蹴而就。小点项目业务逻辑没那么复杂时不建议使用这套，最终以目录代码结构清晰为最终目的。
-:::
+> **具体情况根据项目实际情况划分，不能一蹴而就。小点项目业务逻辑没那么复杂时不建议使用这套，最终以目录代码结构清晰为最终目的。**  -->

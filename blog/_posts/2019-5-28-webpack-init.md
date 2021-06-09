@@ -17,7 +17,7 @@ tags:
 
 安装webpack插件 `yarn install webpack-dev-server html-webpack-plugin --dev`
 
-<font color=#999>--dev 生产依赖</font>
+<font color=#b29400>--dev 生产依赖</font>
 
 创建 webpack.dev.config.js `touch webpack.dev.config.js`
 
@@ -30,7 +30,7 @@ tags:
 
 兼容es6需安装babel插件 `yarn add babel-loader @babel/core @babel/preset-env --dev`,在webpack.dev.config.js中的module添加对应的rules
 
-> <big>各版本有相对应的插件文档，注意版本号</big>
+> **各版本有相对应的插件文档，注意版本号**
 > - "@babel/core": "^7.4.3",
 > - "@babel/preset-env": "^7.4.3",
 > - "babel-loader": "^8.0.5",

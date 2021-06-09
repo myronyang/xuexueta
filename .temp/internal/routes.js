@@ -4,7 +4,7 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "D:\\Github\\blog\\node_modules\\_@vuepress_theme-blog@2.3.3@@vuepress\\theme-blog\\layouts\\GlobalLayout.vue"
+import GlobalLayout from "D:\\Github\\blog\\node_modules\\@vuepress\\theme-blog\\layouts\\GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
@@ -85,6 +85,22 @@ export const routes = [
     redirect: "/2018/09/06/business-standard/"
   },
   {
+    name: "v-0d450c87",
+    path: "/2019/04/05/javascript-design/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Post", "v-0d450c87").then(next)
+    },
+  },
+  {
+    path: "/2019/04/05/javascript-design/index.html",
+    redirect: "/2019/04/05/javascript-design/"
+  },
+  {
+    path: "/_posts/2019-4-5-javascript-design.html",
+    redirect: "/2019/04/05/javascript-design/"
+  },
+  {
     name: "v-971aa872",
     path: "/2019/05/28/webpack-init/",
     component: GlobalLayout,
@@ -115,22 +131,6 @@ export const routes = [
   {
     path: "/_posts/2019-5-29-utils-func.html",
     redirect: "/2019/05/29/utils-func/"
-  },
-  {
-    name: "v-0d450c87",
-    path: "/2019/04/05/javascript-design/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Post", "v-0d450c87").then(next)
-    },
-  },
-  {
-    path: "/2019/04/05/javascript-design/index.html",
-    redirect: "/2019/04/05/javascript-design/"
-  },
-  {
-    path: "/_posts/2019-4-5-javascript-design.html",
-    redirect: "/2019/04/05/javascript-design/"
   },
   {
     name: "v-424df898",
@@ -185,6 +185,19 @@ export const routes = [
     redirect: "/tag/业务/"
   },
   {
+    name: "v-ae3001b6",
+    path: "/tag/设计模式/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("FrontmatterPagination", "v-ae3001b6").then(next)
+    },
+    meta: {"pid":"tag","id":"设计模式"}
+  },
+  {
+    path: "/tag/设计模式/index.html",
+    redirect: "/tag/设计模式/"
+  },
+  {
     name: "v-ad8a01a8",
     path: "/tag/Webpack/",
     component: GlobalLayout,
@@ -209,19 +222,6 @@ export const routes = [
   {
     path: "/tag/工具/index.html",
     redirect: "/tag/工具/"
-  },
-  {
-    name: "v-ae3001b6",
-    path: "/tag/设计模式/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("FrontmatterPagination", "v-ae3001b6").then(next)
-    },
-    meta: {"pid":"tag","id":"设计模式"}
-  },
-  {
-    path: "/tag/设计模式/index.html",
-    redirect: "/tag/设计模式/"
   },
   {
     name: "v-c3507bb6",

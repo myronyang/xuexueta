@@ -28,7 +28,7 @@ const fn = function() {}
 fn instanceof Object // true
 ```
 
-> <big>一切（引用类型）都是对象，对象是属性的集合</big>
+> **一切（引用类型）都是对象，对象是属性的集合**
 
 ```js
 const obj = {
@@ -42,7 +42,7 @@ const obj = {
 
 }
 ```
-在js中数组、函数、数组都是对象。<font color=#9c27b0>**对象里面一切都是属性(包含方法)**</font>。方法也是一种属性，因为它的属性表示为键值对的形式。
+在js中数组、函数、数组都是对象。<font color=#b29400>**对象里面一切都是属性(包含方法)**</font>。方法也是一种属性，因为它的属性表示为键值对的形式。
 并且js对象可以任意扩展属性。
 
 那么可以给函数，数组添加属性吗？当然不行，但是它可以以另一种方式添加属性。只要是对象，就是属性和方法的合集。
@@ -68,7 +68,7 @@ var Fn() {
 var fn1 = new Fn()
 ```
 
-通过上面我们发现<font color=#9c27b0>**对象可以通过函数来创建**</font>,但是我们平时创建对象是这样的
+通过上面我们发现<font color=#b29400>**对象可以通过函数来创建**</font>,但是我们平时创建对象是这样的
 ```js
 var obj = {
 	a: 2,
@@ -94,7 +94,7 @@ arr[2] = true
 typeof Object // function
 typeof Array // function
 ```
-所以我们可以确定的说<font color=#9c27b0>**对象都是通过函数来创建的**</font>
+所以我们可以确定的说<font color=#b29400>**对象都是通过函数来创建的**</font>
 
 这就是扯淡的地方，对象都是通过函数来创建的，而函数又是一种对象。
 要搞清楚这个我们就必须去理解prototype原型了。
@@ -102,7 +102,7 @@ typeof Array // function
 
 
 ## prototype原型
-在js中默认给每个函数一个属性prototype。这个prototype的属性值是一个对象，而且js给这个对象给了个constructor的属性,<font color=#9c27b0>**指向这个函数本身**</font>
+在js中默认给每个函数一个属性prototype。这个prototype的属性值是一个对象，而且js给这个对象给了个constructor的属性,<font color=#b29400>**指向这个函数本身**</font>
 
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/img1.png)
 
@@ -139,19 +139,19 @@ Fn是个函数，fn是Fn函数new出来，是Fn的引用。这样fn就可以调�
 
 
 ## 隐式原型
-#### <font color=#9c27b0>每个函数function都有一个prototype</font>，即原型。同时<font color=#9c27b0>每个对象都有一个__proto__</font>,可成为隐式原型。
+#### <font color=#b29400>每个函数function都有一个prototype</font>，即原型。同时<font color=#b29400>每个对象都有一个__proto__</font>,可成为隐式原型。
 
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/img3.png)
 
 从上图来看`obj.__proto__ === obj.prototype` 
 
-即，<font color=#9c27b0>**每个对象都有一个__proto__属性，指向创建该对象的函数的prototype**</font>
+即，<font color=#b29400>**每个对象都有一个__proto__属性，指向创建该对象的函数的prototype**</font>
 
 上图中的`object.prototype`也是个对象，那么他的`__proto__`指向哪里？
 
 我们自己定义函数的prototype的本质和`var obj = {}`是一样的，都是被Object创建，所以他的`__proto__`指向`Object.prototype`。
 
-> <big>但是`Object.prototype`是一个特例，它的·`__proto__`指向`null`</big>
+> **但是`Object.prototype`是一个特例，它的·`__proto__`指向`null`**
 
 函数也是对象，函数也有`__proto__`吗？
 
@@ -167,7 +167,7 @@ console.log(fn1(1, 2))
 ```
 第一种是我们常用方式，第二种是通过`new Function`来创建。
 
-> <big>首先根本不推荐使用Function来创建函数(此处只是演示)</big>
+> **首先根本不推荐使用Function来创建函数(此处只是演示)**
 
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/img6.png)
 
@@ -198,9 +198,9 @@ fn instanceof Function  // true
 
 #### 重点看上图，看似繁杂，但是我们必须一步步分析，首先温故两个概念
 
-> - <big>每个对象都有一个__proto__属性，指向创建该对象的函数的prototype</big>
-> - <big>每个函数都有一个属性叫做prototype</big>
-> - <big>且默认的只有一个叫做constructor的属性，指向这个函数本身</big>
+> **每个对象都有一个__proto__属性，指向创建该对象的函数的prototype。** \
+> **每个函数都有一个属性叫做prototype。** \
+> **且默认的只有一个叫做constructor的属性，指向这个函数本身。**
 
 - f1由Foo创建，所以f1的__proto__指向Foo.prototype，而Foo是由function Foo创建，Foo也是一个函数，函数的prototype和onstructor指向函数本身，
 所以function Foo和Foo.prototype相互关联。
@@ -249,7 +249,7 @@ console.log(f1.b) // 200
 ```
 以上代码中，f1是由Foo函数new出来的对象，f1.a是f1对象的基本属性，f1.b是从Foo.prototype得来，因为`f1.__proto__`指向的是`Foo.prototype`。
 
-> <big>访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链。</big>
+> **访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链。**
 
 ![prototype](http://gxzn-free.oss-cn-zhangjiakou.aliyuncs.com/Web-private-resource/Blog/prototypes/182013450814552.png)
 
